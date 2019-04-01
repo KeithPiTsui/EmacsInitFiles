@@ -50,3 +50,6 @@ flycheck_*.el
 #ede-projects
 ede-projects.el
 projectile-bookmarks.eld
+
+#url
+url
