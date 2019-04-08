@@ -35,3 +35,11 @@
       '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
         ("http" . "127.0.0.1:1087")
         ("https" . "127.0.0.1:1087")))
+
+(defun sudo ()
+  "Use TRAMP to 'sudo' the current buffer"
+  (interactive)
+  (when buffer-file-name
+    (find-alternate-file
+     (concat "/sudo:root@localhost:"
+             buffer-file-name))))
