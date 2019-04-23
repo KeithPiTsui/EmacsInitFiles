@@ -1,0 +1,341 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MIPSTARGETMACHINE_H" variable (:constant-flag t) nil [533 552])
+            ("MipsFrameLowering.h" include nil nil [554 584])
+            ("MipsISelLowering.h" include nil nil [585 614])
+            ("MipsInstrInfo.h" include nil nil [615 641])
+            ("MipsJITInfo.h" include nil nil [642 666])
+            ("MipsSelectionDAGInfo.h" include nil nil [667 700])
+            ("MipsSubtarget.h" include nil nil [701 727])
+            ("llvm/ADT/OwningPtr.h" include nil nil [728 759])
+            ("llvm/CodeGen/Passes.h" include nil nil [760 792])
+            ("llvm/CodeGen/SelectionDAGISel.h" include nil nil [793 835])
+            ("llvm/IR/DataLayout.h" include nil nil [836 867])
+            ("llvm/Target/TargetFrameLowering.h" include nil nil [868 912])
+            ("llvm/Target/TargetMachine.h" include nil nil [913 951])
+            ("llvm" type
+               (:members 
+                  ( ("formatted_raw_ostream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [970 998])
+                    ("MipsRegisterInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [999 1022])
+                    ("MipsTargetMachine" type
+                       (:superclasses 
+                          ( ("LLVMTargetMachine" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("Subtarget" variable (:type ("MipsSubtarget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1079 1109])
+                            ("DL" variable
+                               (:constant-flag t
+                                :type ("DataLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1112 1135])
+                            ("InstrInfo" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsInstrInfo" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1174 1215])
+                            ("FrameLowering" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsFrameLowering" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1218 1267])
+                            ("TLInfo" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsTargetLowering" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1270 1313])
+                            ("InstrInfo16" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsInstrInfo" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1316 1359])
+                            ("FrameLowering16" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsFrameLowering" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1362 1413])
+                            ("TLInfo16" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsTargetLowering" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1416 1461])
+                            ("InstrInfoSE" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsInstrInfo" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1464 1507])
+                            ("FrameLoweringSE" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsFrameLowering" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1510 1561])
+                            ("TLInfoSE" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("MipsTargetLowering" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1564 1609])
+                            ("TSInfo" variable (:type ("MipsSelectionDAGInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1612 1640])
+                            ("InstrItins" variable
+                               (:constant-flag t
+                                :type ("InstrItineraryData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1643 1680])
+                            ("JITInfo" variable (:type ("MipsJITInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1683 1703])
+                            ("public" label nil (reparse-symbol classsubparts) [1705 1712])
+                            ("MipsTargetMachine" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("T" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Target" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1733 1749])
+                                    ("TT" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1750 1763])
+                                    ("CPU" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1798])
+                                    ("FS" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1799 1812])
+                                    ("Options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1813 1842])
+                                    ("RM" variable (:type ("Reloc::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1863 1879])
+                                    ("CM" variable (:type ("CodeModel::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1880 1900])
+                                    ("OL" variable (:type ("CodeGenOpt::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1921 1942])
+                                    ("isLittle" variable (:type "bool") (reparse-symbol arg-sub-list) [1963 1977]))                                  
+                                :type ("MipsTargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1715 1978])
+                            ("MipsTargetMachine" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1982 2013])
+                            ("addAnalysisPasses" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2048 2068]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2017 2069])
+                            ("getInstrInfo" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("MipsInstrInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2073 2152])
+                            ("getFrameLowering" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("TargetFrameLowering" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2155 2248])
+                            ("getSubtargetImpl" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("MipsSubtarget" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2251 2329])
+                            ("getDataLayout" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("DataLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2332 2399])
+                            ("getInstrItineraryData" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("InstrItineraryData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2403 2527])
+                            ("getJITInfo" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("MipsJITInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2531 2587])
+                            ("getRegisterInfo" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("MipsRegisterInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2591 2695])
+                            ("getTargetLowering" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("MipsTargetLowering" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2699 2789])
+                            ("getSelectionDAGInfo" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("MipsSelectionDAGInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2793 2882])
+                            ("createPassConfig" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2962 2982]))                                  
+                                :type ("TargetPassConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2919 2983])
+                            ("addCodeEmitter" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3014 3034])
+                                    ("JCE" variable
+                                       (:reference 1
+                                        :type ("JITCodeEmitter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3035 3055]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2986 3056])
+                            ("setHelperClassesMips16" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3084 3114])
+                            ("setHelperClassesMipsSE" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3118 3148]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1024 3153])
+                    ("MipsebTargetMachine" type
+                       (:superclasses 
+                          ( ("MipsTargetMachine" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("anchor" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3279 3301])
+                            ("public" label nil (reparse-symbol classsubparts) [3302 3309])
+                            ("MipsebTargetMachine" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("T" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Target" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3332 3348])
+                                    ("TT" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3349 3362])
+                                    ("CPU" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3385 3399])
+                                    ("FS" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3400 3413])
+                                    ("Options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3414 3443])
+                                    ("RM" variable (:type ("Reloc::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3466 3482])
+                                    ("CM" variable (:type ("CodeModel::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3483 3503])
+                                    ("OL" variable (:type ("CodeGenOpt::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3526 3547]))                                  
+                                :type ("MipsebTargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3312 3548]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3222 3551])
+                    ("MipselTargetMachine" type
+                       (:superclasses 
+                          ( ("MipsTargetMachine" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("anchor" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3680 3702])
+                            ("public" label nil (reparse-symbol classsubparts) [3703 3710])
+                            ("MipselTargetMachine" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("T" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Target" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3733 3749])
+                                    ("TT" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3750 3763])
+                                    ("CPU" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3786 3800])
+                                    ("FS" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3801 3814])
+                                    ("Options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3815 3844])
+                                    ("RM" variable (:type ("Reloc::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3867 3883])
+                                    ("CM" variable (:type ("CodeModel::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3884 3904])
+                                    ("OL" variable (:type ("CodeGenOpt::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3927 3948]))                                  
+                                :type ("MipselTargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3713 3949]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3623 3952]))                  
+                :type "namespace")
+                nil [953 3955]))          
+      :file "MipsTargetMachine.h"
+      :pointmax 3986
+      :fsize 3985
+      :lastmodtime '(20960 37442)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MIPSTARGETMACHINE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "MipsFrameLowering.h"
+      :fsize 1357
+      :lastmodtime '(20820 62344))
+    (semanticdb-table "semanticdb-table"
+      :file "MipsISelLowering.h"
+      :fsize 22549
+      :lastmodtime '(21084 38546))
+    (semanticdb-table "semanticdb-table"
+      :file "MipsInstrInfo.h"
+      :fsize 5757
+      :lastmodtime '(21130 46996))
+    (semanticdb-table "semanticdb-table"
+      :file "MipsJITInfo.h"
+      :fsize 2432
+      :lastmodtime '(20669 12688))
+    (semanticdb-table "semanticdb-table"
+      :file "MipsSelectionDAGInfo.h"
+      :fsize 824
+      :lastmodtime '(19880 48591))
+    (semanticdb-table "semanticdb-table"
+      :file "MipsSubtarget.h"
+      :fsize 7211
+      :lastmodtime '(21121 20687)))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!lib!Target!Mips!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,82 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Option/Arg.h" include nil nil [625 653])
+            ("clang/Driver/DriverDiagnostic.h" include nil nil [654 696])
+            ("clang/Driver/Options.h" include nil nil [697 730])
+            ("clang/Frontend/CompilerInstance.h" include nil nil [731 775])
+            ("clang/Frontend/CompilerInvocation.h" include nil nil [776 822])
+            ("clang/Frontend/FrontendDiagnostic.h" include nil nil [823 869])
+            ("clang/Frontend/TextDiagnosticBuffer.h" include nil nil [870 918])
+            ("clang/Frontend/TextDiagnosticPrinter.h" include nil nil [919 968])
+            ("clang/FrontendTool/Utils.h" include nil nil [969 1006])
+            ("llvm/ADT/Statistic.h" include nil nil [1007 1038])
+            ("llvm/LinkAllPasses.h" include nil nil [1039 1070])
+            ("llvm/Option/ArgList.h" include nil nil [1071 1103])
+            ("llvm/Option/OptTable.h" include nil nil [1104 1137])
+            ("llvm/Support/ErrorHandling.h" include nil nil [1138 1177])
+            ("llvm/Support/ManagedStatic.h" include nil nil [1178 1217])
+            ("llvm/Support/Signals.h" include nil nil [1218 1251])
+            ("llvm/Support/TargetSelect.h" include nil nil [1252 1290])
+            ("llvm/Support/Timer.h" include nil nil [1291 1322])
+            ("llvm/Support/raw_ostream.h" include nil nil [1323 1360])
+            ("cstdio" include (:system-flag t) nil [1361 1378])
+            ("clang" using (:type ("clang" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1379 1401])
+            ("llvm::opt" using (:type ("llvm::opt" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1402 1428])
+            ("LLVMErrorHandler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("UserData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1637 1652])
+                    ("Message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1653 1680])
+                    ("GenCrashDiag" variable (:type "bool") (reparse-symbol arg-sub-list) [1710 1728]))                  
+                :type "void")
+                nil [1608 2312])
+            ("cc1_main" function
+               (:arguments 
+                  ( ("ArgBegin" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2327 2349])
+                    ("ArgEnd" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2350 2370])
+                    ("Argv0" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2384 2402])
+                    ("MainAddr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2403 2418]))                  
+                :type "int")
+                nil [2314 4873]))          
+      :file "cc1_main.cpp"
+      :pointmax 4874
+      :fsize 4873
+      :lastmodtime '(20923 20515)
+      :unmatched-syntax nil))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!tools!clang!tools!driver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

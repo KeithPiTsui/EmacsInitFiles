@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("sum" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [29 35])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [36 42]))                  
+                :type "int")
+                nil [21 43])
+            ("main" function (:type "int") nil [45 117]))          
+      :file "main.c"
+      :pointmax 118
+      :fsize 117
+      :lastmodtime '(23741 29798)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sum" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [9 15])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [16 22]))                  
+                :type "int")
+                nil [1 42]))          
+      :file "sum.c"
+      :pointmax 43
+      :fsize 42
+      :lastmodtime '(23741 29828)
+      :unmatched-syntax nil))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!Getting_started_with_llvm_core_libraries!chapter03!01!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

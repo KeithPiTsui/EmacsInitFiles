@@ -1,0 +1,176 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SparcRegisterInfo.h" include nil nil [510 540])
+            ("Sparc.h" include nil nil [541 559])
+            ("SparcMachineFunctionInfo.h" include nil nil [560 597])
+            ("SparcSubtarget.h" include nil nil [598 625])
+            ("llvm/ADT/BitVector.h" include nil nil [626 657])
+            ("llvm/ADT/STLExtras.h" include nil nil [658 689])
+            ("llvm/CodeGen/MachineFrameInfo.h" include nil nil [690 732])
+            ("llvm/CodeGen/MachineFunction.h" include nil nil [733 774])
+            ("llvm/CodeGen/MachineInstrBuilder.h" include nil nil [775 820])
+            ("llvm/IR/Type.h" include nil nil [821 846])
+            ("llvm/Support/CommandLine.h" include nil nil [847 884])
+            ("llvm/Support/ErrorHandling.h" include nil nil [885 924])
+            ("llvm/Target/TargetInstrInfo.h" include nil nil [925 965])
+            ("GET_REGINFO_TARGET_DESC" variable (:constant-flag t) nil [975 998])
+            ("SparcGenRegisterInfo.inc" include nil nil [999 1034])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1036 1057])
+            ("ReserveAppRegisters" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1131 1142])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1143 1158])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1180 1231]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1059 1233])
+            ("SparcRegisterInfo" function
+               (:constructor-flag t
+                :parent "SparcRegisterInfo"
+                :arguments 
+                  ( ("st" variable
+                       (:reference 1
+                        :type ("SparcSubtarget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1272 1291]))                  
+                :type ("SparcRegisterInfo" type (:type "class") nil nil))
+                nil [1235 1343])
+            ("getCalleeSavedRegs" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "SparcRegisterInfo"
+                :constant-flag t
+                :arguments 
+                  ( ("MF" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MachineFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1399 1425]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1345 1531])
+            ("getCallPreservedMask" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "SparcRegisterInfo"
+                :constant-flag t
+                :arguments 
+                  ( ("CC" variable (:type ("CallingConv::ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1589 1608]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1533 1640])
+            ("getRTCallPreservedMask" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "SparcRegisterInfo"
+                :constant-flag t
+                :arguments 
+                  ( ("CC" variable (:type ("CallingConv::ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1700 1719]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1642 1753])
+            ("getReservedRegs" function
+               (:methodconst-flag t
+                :parent "SparcRegisterInfo"
+                :arguments 
+                  ( ("MF" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MachineFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1800 1826]))                  
+                :type ("BitVector" type (:type "class") nil nil))
+                nil [1755 2633])
+            ("getPointerRegClass" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "SparcRegisterInfo"
+                :constant-flag t
+                :arguments 
+                  ( ("MF" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MachineFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2700 2726])
+                    ("Kind" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2765 2779]))                  
+                :type ("TargetRegisterClass" type (:type "class") nil nil))
+                nil [2635 2865])
+            ("replaceFI" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MF" variable
+                       (:reference 1
+                        :type ("MachineFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2889 2909])
+                    ("II" variable (:type ("MachineBasicBlock::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2932 2963])
+                    ("MI" variable
+                       (:reference 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2986 3003])
+                    ("dl" variable (:type ("DebugLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3026 3038])
+                    ("FIOperandNum" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3061 3083])
+                    ("Offset" variable (:type "int") (reparse-symbol arg-sub-list) [3084 3095])
+                    ("FramePtr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3118 3136]))                  
+                :type "void")
+                nil [2867 4871])
+            ("eliminateFrameIndex" function
+               (:methodconst-flag t
+                :parent "SparcRegisterInfo"
+                :arguments 
+                  ( ("II" variable (:type ("MachineBasicBlock::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4918 4949])
+                    ("SPAdj" variable (:type "int") (reparse-symbol arg-sub-list) [4989 4999])
+                    ("FIOperandNum" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5000 5022])
+                    ("RS" variable
+                       (:pointer 1
+                        :type ("RegScavenger" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5062 5079]))                  
+                :type "void")
+                nil [4874 7210])
+            ("getFrameRegister" function
+               (:methodconst-flag t
+                :parent "SparcRegisterInfo"
+                :arguments 
+                  ( ("MF" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MachineFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7257 7283]))                  
+                :type "unsigned int")
+                nil [7212 7310]))          
+      :file "SparcRegisterInfo.cpp"
+      :pointmax 7312
+      :fsize 7311
+      :lastmodtime '(21142 19125)
+      :unmatched-syntax '((semantic-list 1188 . 1231) (semantic-list 1151 . 1158) (string 1100 . 1129))
+      :lexical-table 
+        '(("GET_REGINFO_TARGET_DESC")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "SparcRegisterInfo.h"
+      :fsize 1787
+      :lastmodtime '(21074 47498))
+    (semanticdb-table "semanticdb-table"
+      :file "Sparc.h"
+      :fsize 4163
+      :lastmodtime '(21142 19125))
+    (semanticdb-table "semanticdb-table"
+      :file "SparcMachineFunctionInfo.h"
+      :fsize 1890
+      :lastmodtime '(20901 34855))
+    (semanticdb-table "semanticdb-table"
+      :file "SparcSubtarget.h"
+      :fsize 2225
+      :lastmodtime '(21018 19758)))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!lib!Target!Sparc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

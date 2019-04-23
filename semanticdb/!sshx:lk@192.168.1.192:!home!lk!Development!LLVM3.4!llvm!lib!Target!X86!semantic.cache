@@ -1,0 +1,251 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("X86TargetMachine.h" include nil nil [495 524])
+            ("X86.h" include nil nil [525 541])
+            ("llvm/CodeGen/MachineFunction.h" include nil nil [542 583])
+            ("llvm/CodeGen/Passes.h" include nil nil [584 616])
+            ("llvm/PassManager.h" include nil nil [617 646])
+            ("llvm/Support/CommandLine.h" include nil nil [647 684])
+            ("llvm/Support/FormattedStream.h" include nil nil [685 726])
+            ("llvm/Support/TargetRegistry.h" include nil nil [727 767])
+            ("llvm/Target/TargetOptions.h" include nil nil [768 806])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [807 828])
+            ("LLVMInitializeX86Target" function (:type "void") nil [841 1031])
+            ("anchor" function
+               (:parent "X86_32TargetMachine"
+                :type "void")
+                nil [1033 1071])
+            ("X86_32TargetMachine" function
+               (:constructor-flag t
+                :parent "X86_32TargetMachine"
+                :arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Target" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1114 1130])
+                    ("TT" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1131 1144])
+                    ("CPU" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1186 1200])
+                    ("FS" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1201 1214])
+                    ("Options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TargetOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1256 1285])
+                    ("RM" variable (:type ("Reloc::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1327 1343])
+                    ("CM" variable (:type ("CodeModel::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1344 1364])
+                    ("OL" variable (:type ("CodeGenOpt::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1406 1427]))                  
+                :type ("X86_32TargetMachine" type (:type "class") nil nil))
+                nil [1073 2066])
+            ("anchor" function
+               (:parent "X86_64TargetMachine"
+                :type "void")
+                nil [2068 2106])
+            ("X86_64TargetMachine" function
+               (:constructor-flag t
+                :parent "X86_64TargetMachine"
+                :arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Target" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2149 2165])
+                    ("TT" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2166 2179])
+                    ("CPU" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2221 2235])
+                    ("FS" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2236 2249])
+                    ("Options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TargetOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2291 2320])
+                    ("RM" variable (:type ("Reloc::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2378])
+                    ("CM" variable (:type ("CodeModel::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2379 2399])
+                    ("OL" variable (:type ("CodeGenOpt::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2441 2462]))                  
+                :type ("X86_64TargetMachine" type (:type "class") nil nil))
+                nil [2108 2942])
+            ("X86TargetMachine" function
+               (:constructor-flag t
+                :parent "X86TargetMachine"
+                :arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Target" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3033 3049])
+                    ("TT" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3050 3063])
+                    ("CPU" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3099 3113])
+                    ("FS" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3114 3127])
+                    ("Options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TargetOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3163 3192])
+                    ("RM" variable (:type ("Reloc::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3228 3244])
+                    ("CM" variable (:type ("CodeModel::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3245 3265])
+                    ("OL" variable (:type ("CodeGenOpt::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3301 3322])
+                    ("is64Bit" variable (:type "bool") (reparse-symbol arg-sub-list) [3358 3371]))                  
+                :type ("X86TargetMachine" type (:type "class") nil nil))
+                nil [2998 4515])
+            ("UseVZeroUpper" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4768 4779])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4782 4832])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4836 4850]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4711 4852])
+            ("X86EarlyIfConv" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5000 5011])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5020 5065]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4945 5067])
+            ("addAnalysisPasses" function
+               (:parent "X86TargetMachine"
+                :arguments 
+                  ( ("PM" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5300 5320]))                  
+                :type "void")
+                nil [5259 5595])
+            ("unnamed" type
+               (:members 
+                  ( ("X86PassConfig" type
+                       (:superclasses 
+                          ( ("TargetPassConfig" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5903 5910])
+                            ("X86PassConfig" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("TM" variable
+                                       (:pointer 1
+                                        :type ("X86TargetMachine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5927 5948])
+                                    ("PM" variable
+                                       (:reference 1
+                                        :type ("PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5949 5969]))                                  
+                                :type ("X86PassConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5913 6003])
+                            ("getX86TargetMachine" function
+                               (:methodconst-flag t
+                                :type ("X86TargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6007 6096])
+                            ("getX86Subtarget" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("X86Subtarget" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6100 6203])
+                            ("addInstSelector" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6207 6238])
+                            ("addILPOpts" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6241 6267])
+                            ("addPreRegAlloc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6270 6300])
+                            ("addPostRegAlloc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6303 6334])
+                            ("addPreEmitPass" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6337 6367]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5855 6370]))                  
+                :type "namespace")
+                nil [5792 6372])
+            ("createPassConfig" function
+               (:pointer 1
+                :parent "X86TargetMachine"
+                :arguments 
+                  ( ("PM" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6440 6460]))                  
+                :type ("TargetPassConfig" type (:type "class") nil nil))
+                nil [6387 6502])
+            ("addInstSelector" function
+               (:parent "X86PassConfig"
+                :type "bool")
+                nil [6504 7000])
+            ("addILPOpts" function
+               (:parent "X86PassConfig"
+                :type "bool")
+                nil [7002 7164])
+            ("addPreRegAlloc" function
+               (:parent "X86PassConfig"
+                :type "bool")
+                nil [7166 7274])
+            ("addPostRegAlloc" function
+               (:parent "X86PassConfig"
+                :type "bool")
+                nil [7276 7432])
+            ("addPreEmitPass" function
+               (:parent "X86PassConfig"
+                :type "bool")
+                nil [7434 8128])
+            ("addCodeEmitter" function
+               (:parent "X86TargetMachine"
+                :arguments 
+                  ( ("PM" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8168 8188])
+                    ("JCE" variable
+                       (:reference 1
+                        :type ("JITCodeEmitter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8227 8247]))                  
+                :type "bool")
+                nil [8130 8319]))          
+      :file "X86TargetMachine.cpp"
+      :pointmax 8320
+      :fsize 8319
+      :lastmodtime '(21089 50789)
+      :unmatched-syntax '((semantic-list 5028 . 5065) (string 4981 . 4998) (semantic-list 4844 . 4850) (semantic-list 4790 . 4832) (string 4746 . 4766)))
+    (semanticdb-table "semanticdb-table"
+      :file "X86TargetMachine.h"
+      :fsize 4489
+      :lastmodtime '(20714 9930))
+    (semanticdb-table "semanticdb-table"
+      :file "X86.h"
+      :fsize 3103
+      :lastmodtime '(20857 37425)))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!lib!Target!X86!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

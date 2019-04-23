@@ -1,0 +1,130 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "cdefs.h"
+      :pointmax 29400
+      :fsize 29399
+      :lastmodtime '(23687 11017 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_SYS_STDIO_H_" variable (:constant-flag t) nil [1352 1365])
+            ("sys/cdefs.h" include (:system-flag t) nil [1367 1389]))          
+      :file "stdio.h"
+      :pointmax 2207
+      :fsize 2206
+      :lastmodtime '(23687 11018 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SYS_STDIO_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_SYS__TYPES_H_" variable (:constant-flag t) nil [1358 1372])
+            ("sys/cdefs.h" include (:system-flag t) nil [1374 1396])
+            ("machine/_types.h" include (:system-flag t) nil [1397 1424])
+            ("__DARWIN_NULL" variable (:constant-flag t) nil [1670 1683])
+            ("__darwin_blkcnt_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1933 1975])
+            ("__darwin_blksize_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2000 2043])
+            ("__darwin_dev_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2075 2114])
+            ("__darwin_fsblkcnt_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2135 2179])
+            ("__darwin_fsfilcnt_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2218 2262])
+            ("__darwin_gid_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2301 2340])
+            ("__darwin_id_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2383 2421])
+            ("__darwin_ino64_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2465 2506])
+            ("__darwin_ino_t" type
+               (:typedef ("__darwin_ino64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2574 2614])
+            ("__darwin_mach_port_name_t" type
+               (:typedef ("__darwin_natural_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2796 2849])
+            ("__darwin_mach_port_t" type
+               (:typedef ("__darwin_mach_port_name_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2869 2924])
+            ("__darwin_mode_t" type
+               (:typedef ("__uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2944 2984])
+            ("__darwin_off_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3025 3064])
+            ("__darwin_pid_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3105 3144])
+            ("__darwin_sigset_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3187 3229])
+            ("__darwin_suseconds_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3258 3303])
+            ("__darwin_uid_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3331 3370])
+            ("__darwin_useconds_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3400 3444])
+            ("__darwin_uuid_t" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [3473 3517])
+            ("__darwin_uuid_string_t" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [3518 3561])
+            ("sys/_pthread/_pthread_types.h" include (:system-flag t) nil [3563 3603])
+            ("__offsetof" variable (:constant-flag t) nil [3693 3703]))          
+      :file "_types.h"
+      :pointmax 3896
+      :fsize 3895
+      :lastmodtime '(23687 11017 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__offsetof" (spp-arg-list ("type" "field") 3703 . 3716) . ((symbol "__builtin_offsetof" 3717 . 3735) (semantic-list "(type, field)" 3735 . 3748)))
+          ("__DARWIN_NULL" . ((symbol "__null" 1684 . 1690)))
+          ("_SYS__TYPES_H_")
+          )
+))
+  :file "!usr!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

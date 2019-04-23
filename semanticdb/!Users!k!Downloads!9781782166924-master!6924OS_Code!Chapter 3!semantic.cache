@@ -1,0 +1,70 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Bitcode/ReaderWriter.h" include nil nil [186 224])
+            ("llvm/IR/Function.h" include nil nil [225 254])
+            ("llvm/IR/LLVMContext.h" include nil nil [255 287])
+            ("llvm/IR/Module.h" include nil nil [288 315])
+            ("llvm/Support/CommandLine.h" include nil nil [316 353])
+            ("llvm/Support/MemoryBuffer.h" include nil nil [354 392])
+            ("llvm/Support/raw_os_ostream.h" include nil nil [393 433])
+            ("llvm/Support/system_error.h" include nil nil [434 472])
+            ("iostream" include (:system-flag t) nil [473 492])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [494 515])
+            ("FileName" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Positional" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [554 570])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [570 594])
+                    ("" variable (:type ("cl::Required" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [605 618]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [517 619])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [630 639])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [640 652]))                  
+                :type "int")
+                nil [621 1268]))          
+      :file "hello.cpp"
+      :pointmax 1269
+      :fsize 1268
+      :lastmodtime '(22866 18082 0 0)
+      :unmatched-syntax '((semantic-list 578 . 594)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("QUIET" variable (:default-value ("@")) nil [42 51])
+            ("LDFLAGS" variable (:default-value ("$(shell $(LLVM_CONFIG) --ldflags)")) nil [74 117])
+            ("COMMON_FLAGS" variable (:default-value ("-Wall" "-Wextra")) nil [117 144])
+            ("CXXFLAGS" variable (:default-value ("$(COMMON_FLAGS)" "$(shell $(LLVM_CONFIG) --cxxflags)")) nil [144 205])
+            ("CPPFLAGS" variable (:default-value ("$(shell $(LLVM_CONFIG) --cppflags)" "-I$(SRC_DIR)")) nil [205 263])
+            ("HELLO" variable (:default-value ("helloworld")) nil [264 281])
+            ("HELLO_OBJECTS" variable (:default-value ("hello.o")) nil [281 303])
+            ("default" function (:arguments ("$(HELLO)")) nil [304 322])
+            ("%.o" function (:arguments ("$(SRC_DIR)/%.cpp")) nil [323 416])
+            ("$(HELLO)" function (:arguments ("$(HELLO_OBJECTS)")) nil [417 553])
+            ("clean" function nil nil [554 607]))          
+      :file "Makefile"
+      :pointmax 640
+      :fsize 639
+      :lastmodtime '(22866 18082 0 0)
+      :unmatched-syntax '((semantic-list 618 . 639) (punctuation 617 . 618) (symbol 608 . 616) (bol 608 . 608) (semantic-list 68 . 73) (punctuation 67 . 68) (punctuation 66 . 67) (punctuation 65 . 66) (symbol 58 . 65) (bol 58 . 58) (symbol 14 . 25) (punctuation 13 . 14) (punctuation 12 . 13) (symbol 1 . 12) (bol 1 . 1))))
+  :file "!Users!k!Downloads!9781782166924-master!6924OS_Code!Chapter 3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

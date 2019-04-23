@@ -1,0 +1,76 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("QUIET" variable (:default-value ("@")) nil [42 51])
+            ("LDFLAGS" variable (:default-value ("$(shell $(LLVM_CONFIG) --ldflags)")) nil [74 117])
+            ("COMMON_FLAGS" variable (:default-value ("-Wall" "-Wextra" "-fno-rtti")) nil [117 154])
+            ("CXXFLAGS" variable (:default-value ("$(COMMON_FLAGS)" "$(shell $(LLVM_CONFIG) --cxxflags)")) nil [154 215])
+            ("CPPFLAGS" variable (:default-value ("$(shell $(LLV_CONFIG) --cppflags)" "-I$(SRC_DIR)")) nil [215 272])
+            ("CLANGLIBS" variable (:default-value ("-Wl,--start-group" "-lclang" "-lclangFrontend" "-lclangDriver" "-lclangSerialization" "-lclangParse" "-lclangSema" "-lclangAnalysis" "-lclangEdit" "-lclangAST" "-lclangLex" "-lclangBasic" "-Wl,--end-group")) nil [273 493])
+            ("LLVMLIBS" variable (:default-value ("$(shell $(LLVM_CONFIG) --libs)")) nil [494 534])
+            ("PROJECT" variable (:default-value ("myproject")) nil [535 553])
+            ("PROJECT_OBJECTS" variable (:default-value ("project.o")) nil [553 579])
+            ("default" function (:arguments ("$(PROJECT)")) nil [580 600])
+            ("%.o" function (:arguments ("$(SRC_DIR)/%.cpp")) nil [601 694])
+            ("$(PROJECT)" function (:arguments ("$(PROJECT_OBJECTS)")) nil [695 817])
+            ("clean" function nil nil [819 873]))          
+      :file "Makefile"
+      :pointmax 873
+      :fsize 872
+      :lastmodtime '(23742 50205)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("clang-c/Index.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [14 42])
+            ("llvm/Support/CommandLine.h" include nil nil [46 83])
+            ("iostream" include (:system-flag t) nil [84 103])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [105 126])
+            ("FileName" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Positional" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165 180])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181 203])
+                    ("" variable (:type ("cl::Required" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [205 218]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [128 219])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [230 239])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [240 252]))                  
+                :type "int")
+                nil [221 1696]))          
+      :file "project.cpp"
+      :pointmax 1697
+      :fsize 1696
+      :lastmodtime '(23742 49978)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 64]))          
+      :file "hello.c"
+      :pointmax 65
+      :fsize 64
+      :lastmodtime '(23742 50506)
+      :unmatched-syntax nil))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!Getting_started_with_llvm_core_libraries!chapter04!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

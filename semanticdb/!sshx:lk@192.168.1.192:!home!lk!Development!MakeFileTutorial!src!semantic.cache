@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("IDIR" variable (:default-value ("../include")) nil [1 19])
+            ("CC" variable (:default-value ("gcc")) nil [19 26])
+            ("CFLAGS" variable (:default-value ("-I$(IDIR)")) nil [26 43])
+            ("ODIR" variable (:default-value ("obj")) nil [44 53])
+            ("LDIR" variable (:default-value ("../lib")) nil [53 67])
+            ("LIBS" variable (:default-value ("-lm")) nil [68 77])
+            ("_DEPS" variable (:default-value ("hellomake.h")) nil [78 98])
+            ("DEPS" variable (:default-value ("$(patsubst %, $(IDIR)/%, $(_DEPS))")) nil [98 140])
+            ("_OBJ" variable (:default-value ("hellomake.o" "hellofunc.o")) nil [141 172])
+            ("OBJ" variable (:default-value ("$(patsubst %, $(ODIR)/%, $(_OBJ))")) nil [172 212])
+            ("$(ODIR)" function (:arguments ("%.c" "$(DEPS)")) nil [213 267])
+            ("hellomake" function (:arguments ("$(OBJ)")) nil [268 320])
+            (".PHONY" function (:arguments ("clean")) nil [321 335])
+            ("clean" function nil nil [336 383]))          
+      :file "Makefile"
+      :pointmax 383
+      :fsize 382
+      :lastmodtime '(23742 31836)
+      :unmatched-syntax nil))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!MakeFileTutorial!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

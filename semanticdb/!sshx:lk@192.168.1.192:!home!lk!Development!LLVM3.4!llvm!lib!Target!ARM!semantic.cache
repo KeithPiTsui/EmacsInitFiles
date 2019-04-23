@@ -1,0 +1,1096 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG_TYPE" variable (:constant-flag t) nil [644 654])
+            ("ARM.h" include nil nil [672 688])
+            ("ARMMachineFunctionInfo.h" include nil nil [689 724])
+            ("MCTargetDesc/ARMAddressingModes.h" include nil nil [725 769])
+            ("Thumb2InstrInfo.h" include nil nil [770 798])
+            ("llvm/ADT/STLExtras.h" include nil nil [799 830])
+            ("llvm/ADT/SmallSet.h" include nil nil [831 861])
+            ("llvm/ADT/SmallVector.h" include nil nil [862 895])
+            ("llvm/ADT/Statistic.h" include nil nil [896 927])
+            ("llvm/CodeGen/MachineConstantPool.h" include nil nil [928 973])
+            ("llvm/CodeGen/MachineFunctionPass.h" include nil nil [974 1019])
+            ("llvm/CodeGen/MachineJumpTableInfo.h" include nil nil [1020 1066])
+            ("llvm/CodeGen/MachineRegisterInfo.h" include nil nil [1067 1112])
+            ("llvm/IR/DataLayout.h" include nil nil [1113 1144])
+            ("llvm/Support/CommandLine.h" include nil nil [1145 1182])
+            ("llvm/Support/Debug.h" include nil nil [1183 1214])
+            ("llvm/Support/ErrorHandling.h" include nil nil [1215 1254])
+            ("llvm/Support/Format.h" include nil nil [1255 1287])
+            ("llvm/Support/raw_ostream.h" include nil nil [1288 1325])
+            ("llvm/Target/TargetMachine.h" include nil nil [1326 1364])
+            ("algorithm" include (:system-flag t) nil [1365 1385])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1386 1407])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumCPEs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1419 1427]))                  
+                :type "int")
+                nil [1409 1465])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumSplit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1476 1485]))                  
+                :type "int")
+                nil [1466 1529])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumCBrFixed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1540 1552]))                  
+                :type "int")
+                nil [1530 1588])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumUBrFixed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1599 1611]))                  
+                :type "int")
+                nil [1589 1649])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumTBs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1660 1667]))                  
+                :type "int")
+                nil [1650 1713])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumT2CPShrunk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1724 1738]))                  
+                :type "int")
+                nil [1714 1792])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumT2BrShrunk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1803 1817]))                  
+                :type "int")
+                nil [1793 1864])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumCBZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1875 1882]))                  
+                :type "int")
+                nil [1865 1921])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumJTMoved" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1932 1943]))                  
+                :type "int")
+                nil [1922 1996])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumJTInserted" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2007 2021]))                  
+                :type "int")
+                nil [1997 2075])
+            ("AdjustJumpTableBlocks" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2147 2158])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2159 2173])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2185 2243]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2078 2245])
+            ("AlignConstantIslands" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2400 2411])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2412 2426])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2438 2480]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2328 2482])
+            ("UnknownPadding" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("LogAlign" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2789 2807])
+                    ("KnownBits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2808 2827]))                  
+                :type "unsigned int")
+                nil [2751 2920])
+            ("unnamed" type
+               (:members 
+                  ( ("ARMConstantIslands" type
+                       (:superclasses 
+                          ( ("MachineFunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("BasicBlockInfo" type
+                               (:members 
+                                  ( ("Offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [4247 4263])
+                                    ("Size" variable (:type "unsigned int") (reparse-symbol classsubparts) [4564 4578])
+                                    ("KnownBits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4729 4747])
+                                    ("Unalign" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4949 4965])
+                                    ("PostAlign" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5140 5158])
+                                    ("BasicBlockInfo" function
+                                       (:constructor-flag t
+                                        :type ("BasicBlockInfo" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5166 5254])
+                                    ("internalKnownBits" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [5441 5750])
+                                    ("postOffset" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("LogAlign" variable
+                                               (:default-value "0"
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [5961 5982]))                                          
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [5941 6252])
+                                    ("postKnownBits" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("LogAlign" variable
+                                               (:default-value "0"
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [6612 6633]))                                          
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [6589 6761]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [3729 6768])
+                            ("BBInfo" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("BasicBlockInfo" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6774 6809])
+                            ("WaterList" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("MachineBasicBlock" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7028 7070])
+                            ("NewWaterList" variable (:type ("SmallSet" type
+                                 (:template-specifier 
+                                    ( ("MachineBasicBlock" type (:pointer 1) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7214 7259])
+                            ("water_iterator" type
+                               (:typedef ("std::vector::iterator" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7265 7330])
+                            ("CPUser" type
+                               (:members 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8221 8238])
+                                    ("CPEMI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8245 8265])
+                                    ("HighWaterMark" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8272 8305])
+                                    ("private" label nil (reparse-symbol classsubparts) [8310 8318])
+                                    ("MaxDisp" variable (:type "unsigned int") (reparse-symbol classsubparts) [8325 8342])
+                                    ("public" label nil (reparse-symbol classsubparts) [8347 8354])
+                                    ("NegOk" variable (:type "bool") (reparse-symbol classsubparts) [8361 8372])
+                                    ("IsSoImm" variable (:type "bool") (reparse-symbol classsubparts) [8379 8392])
+                                    ("KnownAlignment" variable (:type "bool") (reparse-symbol classsubparts) [8399 8419])
+                                    ("CPUser" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("mi" variable
+                                               (:pointer 1
+                                                :type ("MachineInstr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8433 8450])
+                                            ("cpemi" variable
+                                               (:pointer 1
+                                                :type ("MachineInstr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8451 8471])
+                                            ("maxdisp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8472 8489])
+                                            ("neg" variable (:type "bool") (reparse-symbol arg-sub-list) [8503 8512])
+                                            ("soimm" variable (:type "bool") (reparse-symbol arg-sub-list) [8513 8524]))                                          
+                                        :type ("CPUser" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [8426 8688])
+                                    ("getMaxDisp" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [8886 8984]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [8199 8991])
+                            ("CPUsers" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("CPUser" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9129 9157])
+                            ("CPEntry" type
+                               (:members 
+                                  ( ("CPEMI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9366 9386])
+                                    ("CPI" variable (:type "unsigned int") (reparse-symbol classsubparts) [9393 9406])
+                                    ("RefCount" variable (:type "unsigned int") (reparse-symbol classsubparts) [9413 9431])
+                                    ("CPEntry" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("cpemi" variable
+                                               (:pointer 1
+                                                :type ("MachineInstr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9446 9466])
+                                            ("cpi" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9467 9480])
+                                            ("rc" variable
+                                               (:default-value "0"
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [9481 9496]))                                          
+                                        :type ("CPEntry" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [9438 9547]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [9343 9554])
+                            ("CPEntries" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::vector" type (:template-specifier 
+                                        ( ("CPEntry" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9921 9966])
+                            ("ImmBranch" type
+                               (:members 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10231 10248])
+                                    ("MaxDisp" variable
+                                       (:suffix ":31"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [10255 10277])
+                                    ("isCond" variable
+                                       (:suffix ":1"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [10284 10300])
+                                    ("UncondBr" variable (:type "int") (reparse-symbol classsubparts) [10307 10320])
+                                    ("ImmBranch" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("mi" variable
+                                               (:pointer 1
+                                                :type ("MachineInstr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10337 10354])
+                                            ("maxdisp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10355 10372])
+                                            ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [10373 10383])
+                                            ("ubr" variable (:type "int") (reparse-symbol arg-sub-list) [10384 10392]))                                          
+                                        :type ("ImmBranch" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [10327 10459]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [10206 10466])
+                            ("ImmBranches" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ImmBranch" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10555 10590])
+                            ("PushPopMIs" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("MachineInstr" type (:pointer 1) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10678 10719])
+                            ("T2JumpTables" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("MachineInstr" type (:pointer 1) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10801 10844])
+                            ("HasFarJump" variable (:type "bool") (reparse-symbol classsubparts) [10960 10976])
+                            ("MF" variable
+                               (:pointer 1
+                                :type ("MachineFunction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10982 11002])
+                            ("MCP" variable
+                               (:pointer 1
+                                :type ("MachineConstantPool" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11007 11032])
+                            ("TII" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ARMBaseInstrInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11037 11065])
+                            ("STI" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ARMSubtarget" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11070 11094])
+                            ("AFI" variable
+                               (:pointer 1
+                                :type ("ARMFunctionInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11099 11120])
+                            ("isThumb" variable (:type "bool") (reparse-symbol classsubparts) [11125 11138])
+                            ("isThumb1" variable (:type "bool") (reparse-symbol classsubparts) [11143 11157])
+                            ("isThumb2" variable (:type "bool") (reparse-symbol classsubparts) [11162 11176])
+                            ("public" label nil (reparse-symbol classsubparts) [11179 11186])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [11191 11206])
+                            ("ARMConstantIslands" function
+                               (:constructor-flag t
+                                :type ("ARMConstantIslands" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11211 11260])
+                            ("runOnMachineFunction" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("MF" variable
+                                       (:reference 1
+                                        :type ("MachineFunction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11300 11320]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11266 11321])
+                            ("getPassName" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [11327 11447])
+                            ("private" label nil (reparse-symbol classsubparts) [11451 11459])
+                            ("doInitialPlacement" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CPEMIs" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("MachineInstr" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11488 11523]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11464 11524])
+                            ("findConstPoolEntry" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("CPI" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11557 11570])
+                                    ("CPEMI" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11571 11597]))                                  
+                                :type ("CPEntry" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11529 11598])
+                            ("getCPELogAlign" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CPEMI" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11627 11653]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11603 11654])
+                            ("scanFunctionJumpTables" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [11659 11689])
+                            ("initializeFunctionInfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CPEMIs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("MachineInstr" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11722 11763]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11694 11764])
+                            ("splitBlockBeforeInstr" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11810 11827]))                                  
+                                :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11769 11828])
+                            ("updateForInsertedWaterBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("NewBB" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11866 11891]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11833 11892])
+                            ("adjustBBOffsetsAfter" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11923 11945]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11897 11946])
+                            ("decrementCPEReferenceCount" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CPI" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11983 11996])
+                                    ("CPEMI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11997 12017]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11951 12018])
+                            ("findInRangeCPEntry" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("U" variable
+                                       (:reference 1
+                                        :type ("CPUser" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12046 12056])
+                                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12057 12077]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [12023 12078])
+                            ("findAvailableWater" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("U" variable
+                                       (:reference 1
+                                        :type ("CPUser" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12107 12116])
+                                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12117 12137])
+                                    ("WaterIter" variable
+                                       (:reference 1
+                                        :type ("water_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12166 12192]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12083 12193])
+                            ("createNewWater" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CPUserIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12218 12239])
+                                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12240 12260])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12285 12305])
+                                    ("" variable (:type ("NewMBB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12305 12312]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12198 12313])
+                            ("handleConstantPoolUser" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CPUserIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12346 12367]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12318 12368])
+                            ("removeDeadCPEMI" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CPEMI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12394 12414]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12373 12415])
+                            ("removeUnusedCPEntries" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12420 12449])
+                            ("isCPEntryInRange" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12476 12493])
+                                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12494 12514])
+                                    ("CPEMI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12541 12561])
+                                    ("Disp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12562 12576])
+                                    ("NegOk" variable (:type "bool") (reparse-symbol arg-sub-list) [12577 12588])
+                                    ("DoDump" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [12615 12634]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12454 12636])
+                            ("isWaterInRange" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12661 12681])
+                                    ("Water" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12682 12707])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("CPUser" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12732 12742])
+                                    ("Growth" variable
+                                       (:reference 1
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [12743 12760]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12641 12761])
+                            ("isBBInRange" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12783 12800])
+                                    ("BB" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12801 12823])
+                                    ("Disp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12824 12838]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12766 12839])
+                            ("fixupImmediateBr" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Br" variable
+                                       (:reference 1
+                                        :type ("ImmBranch" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12866 12880]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12844 12881])
+                            ("fixupConditionalBr" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Br" variable
+                                       (:reference 1
+                                        :type ("ImmBranch" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12910 12924]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12886 12925])
+                            ("fixupUnconditionalBr" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Br" variable
+                                       (:reference 1
+                                        :type ("ImmBranch" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12956 12970]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12930 12971])
+                            ("undoLRSpillRestore" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12976 13002])
+                            ("mayOptimizeThumb2Instruction" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13041 13064]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13007 13071])
+                            ("optimizeThumb2Instructions" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13076 13110])
+                            ("optimizeThumb2Branches" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13115 13145])
+                            ("reorderThumb2JumpTables" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13150 13181])
+                            ("optimizeThumb2JumpTables" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13186 13218])
+                            ("adjustJTTargetBlockForward" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13269 13291])
+                                    ("JTBB" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13342 13366]))                                  
+                                :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13223 13367])
+                            ("computeBlockSize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MBB" variable
+                                       (:pointer 1
+                                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13395 13418]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13373 13419])
+                            ("getOffsetOf" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :type ("MachineInstr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13445 13462]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13424 13469])
+                            ("getUserOffset" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("CPUser" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13497 13505]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13474 13512])
+                            ("dumpBBs" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13517 13532])
+                            ("verify" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13537 13551])
+                            ("isOffsetInRange" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13578 13598])
+                                    ("TrialOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13599 13620])
+                                    ("Disp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13646 13660])
+                                    ("NegativeOK" variable (:type "bool") (reparse-symbol arg-sub-list) [13661 13677])
+                                    ("IsSoImm" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [13678 13698]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13557 13700])
+                            ("isOffsetInRange" function
+                               (:arguments 
+                                  ( ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13726 13746])
+                                    ("TrialOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13747 13768])
+                                    ("U" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CPUser" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13794 13810]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13705 13938]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3573 13943])
+                    ("ARMConstantIslands::ID" variable
+                       (:default-value "0"
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [13946 13978]))                  
+                :type "namespace")
+                nil [2922 13980])
+            ("verify" function
+               (:parent "ARMConstantIslands"
+                :type "void")
+                nil [14042 14965])
+            ("dumpBBs" function
+               (:parent "ARMConstantIslands"
+                :type "void")
+                nil [15023 15443])
+            ("createARMConstantIslandPass" function
+               (:pointer 1
+                :parent "llvm"
+                :type ("FunctionPass" type (:type "class") nil nil))
+                nil [15533 15621])
+            ("runOnMachineFunction" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("mf" variable
+                       (:reference 1
+                        :type ("MachineFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15669 15689]))                  
+                :type "bool")
+                nil [15623 19954])
+            ("doInitialPlacement" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPEMIs" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("MachineInstr" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20149 20184]))                  
+                :type "void")
+                nil [20105 22867])
+            ("BBHasFallthrough" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MBB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23019 23042]))                  
+                :type "bool")
+                nil [22990 23458])
+            ("findConstPoolEntry" function
+               (:pointer 1
+                :parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPI" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23642 23655])
+                    ("CPEMI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23696 23722]))                  
+                :type ("ARMConstantIslands::CPEntry" type (:type "class") nil nil))
+                nil [23574 23992])
+            ("getCPELogAlign" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPEMI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24188 24214]))                  
+                :type "unsigned int")
+                nil [24144 24668])
+            ("scanFunctionJumpTables" function
+               (:parent "ARMConstantIslands"
+                :type "void")
+                nil [24830 25205])
+            ("initializeFunctionInfo" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPEMIs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("MachineInstr" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25460 25501]))                  
+                :type "void")
+                nil [25411 30446])
+            ("computeBlockSize" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("MBB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30613 30636]))                  
+                :type "void")
+                nil [30571 31423])
+            ("getOffsetOf" function
+               (:methodconst-flag t
+                :parent "ARMConstantIslands"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31654 31671]))                  
+                :type "unsigned int")
+                nil [31613 32200])
+            ("CompareMBBNumbers" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("LHS" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32319 32348])
+                    ("RHS" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32379 32408]))                  
+                :type "bool")
+                nil [32289 32458])
+            ("updateForInsertedWaterBlock" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("NewBB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32722 32747]))                  
+                :type "void")
+                nil [32669 33287])
+            ("splitBlockBeforeInstr" function
+               (:pointer 1
+                :parent "ARMConstantIslands"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33569 33586]))                  
+                :type ("MachineBasicBlock" type (:type "class") nil nil))
+                nil [33508 36228])
+            ("getUserOffset" function
+               (:methodconst-flag t
+                :parent "ARMConstantIslands"
+                :arguments 
+                  ( ("U" variable
+                       (:reference 1
+                        :type ("CPUser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36446 36456]))                  
+                :type "unsigned int")
+                nil [36403 37212])
+            ("isOffsetInRange" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [37661 37681])
+                    ("TrialOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [37723 37744])
+                    ("MaxDisp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [37745 37762])
+                    ("NegativeOK" variable (:type "bool") (reparse-symbol arg-sub-list) [37804 37820])
+                    ("IsSoImm" variable (:type "bool") (reparse-symbol arg-sub-list) [37821 37834]))                  
+                :type "bool")
+                nil [37620 38180])
+            ("isWaterInRange" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [38436 38456])
+                    ("Water" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38497 38522])
+                    ("U" variable
+                       (:reference 1
+                        :type ("CPUser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38523 38533])
+                    ("Growth" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [38574 38591]))                  
+                :type "bool")
+                nil [38396 40005])
+            ("isCPEntryInRange" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40202 40219])
+                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [40220 40240])
+                    ("CPEMI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40279 40299])
+                    ("MaxDisp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [40300 40317])
+                    ("NegOk" variable (:type "bool") (reparse-symbol arg-sub-list) [40356 40367])
+                    ("DoDump" variable (:type "bool") (reparse-symbol arg-sub-list) [40368 40380]))                  
+                :type "bool")
+                nil [40160 41030])
+            ("BBIsJumpedOver" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MBB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41207 41230]))                  
+                :type "bool")
+                nil [41180 41622])
+            ("adjustBBOffsetsAfter" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("BB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41687 41709]))                  
+                :type "void")
+                nil [41641 42521])
+            ("decrementCPEReferenceCount" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPI" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [42836 42849])
+                    ("CPEMI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42902 42922]))                  
+                :type "bool")
+                nil [42784 43203])
+            ("findInRangeCPEntry" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("U" variable
+                       (:reference 1
+                        :type ("CPUser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43637 43647])
+                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [43648 43668]))                  
+                :type "int")
+                nil [43594 45213])
+            ("getUnconditionalBrDisp" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("Opc" variable (:type "int") (reparse-symbol arg-sub-list) [45390 45398]))                  
+                :type "unsigned int")
+                nil [45344 45555])
+            ("findAvailableWater" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("U" variable
+                       (:reference 1
+                        :type ("CPUser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46166 46176])
+                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46177 46197])
+                    ("WaterIter" variable
+                       (:reference 1
+                        :type ("water_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46236 46262]))                  
+                :type "bool")
+                nil [46122 47660])
+            ("createNewWater" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPUserIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48158 48179])
+                    ("UserOffset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48220 48240])
+                    ("" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48281 48301])
+                    ("" variable (:type ("NewMBB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48301 48308]))                  
+                :type "void")
+                nil [48118 54032])
+            ("handleConstantPoolUser" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPUserIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [54373 54394]))                  
+                :type "bool")
+                nil [54325 58274])
+            ("removeDeadCPEMI" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("CPEMI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58441 58461]))                  
+                :type "void")
+                nil [58400 59331])
+            ("removeUnusedCPEntries" function
+               (:parent "ARMConstantIslands"
+                :type "bool")
+                nil [59420 59873])
+            ("isBBInRange" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60035 60052])
+                    ("DestBB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60052 60078])
+                    ("MaxDisp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [60116 60133]))                  
+                :type "bool")
+                nil [59998 60819])
+            ("fixupImmediateBr" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("Br" variable
+                       (:reference 1
+                        :type ("ImmBranch" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60985 60999]))                  
+                :type "bool")
+                nil [60943 61293])
+            ("fixupUnconditionalBr" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("Br" variable
+                       (:reference 1
+                        :type ("ImmBranch" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61639 61653]))                  
+                :type "bool")
+                nil [61593 62088])
+            ("fixupConditionalBr" function
+               (:parent "ARMConstantIslands"
+                :arguments 
+                  ( ("Br" variable
+                       (:reference 1
+                        :type ("ImmBranch" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62358 62372]))                  
+                :type "bool")
+                nil [62314 65466])
+            ("undoLRSpillRestore" function
+               (:parent "ARMConstantIslands"
+                :type "bool")
+                nil [65664 66323])
+            ("mayOptimizeThumb2Instruction" function
+               (:methodconst-flag t
+                :parent "ARMConstantIslands"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66480 66503]))                  
+                :type "bool")
+                nil [66426 66812])
+            ("optimizeThumb2Instructions" function
+               (:parent "ARMConstantIslands"
+                :type "bool")
+                nil [66814 68278])
+            ("optimizeThumb2Branches" function
+               (:parent "ARMConstantIslands"
+                :type "bool")
+                nil [68280 71184])
+            ("optimizeThumb2JumpTables" function
+               (:parent "ARMConstantIslands"
+                :type "bool")
+                nil [71299 76017])
+            ("reorderThumb2JumpTables" function
+               (:parent "ARMConstantIslands"
+                :type "bool")
+                nil [76175 77635])
+            ("adjustJTTargetBlockForward" function
+               (:pointer 1
+                :parent "ARMConstantIslands"
+                :arguments 
+                  ( ("BB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77704 77726])
+                    ("JTBB" variable
+                       (:pointer 1
+                        :type ("MachineBasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77727 77751]))                  
+                :type ("MachineBasicBlock" type (:type "class") nil nil))
+                nil [77637 79731]))          
+      :file "ARMConstantIslandPass.cpp"
+      :pointmax 79732
+      :fsize 79731
+      :lastmodtime '(20910 10215)
+      :unmatched-syntax '((punctuation 48300 . 48301) (punctuation 12304 . 12305) (semantic-list 2446 . 2480) (semantic-list 2420 . 2426) (string 2370 . 2398) (semantic-list 2193 . 2243) (semantic-list 2167 . 2173) (string 2121 . 2145) (string 2022 . 2073) (string 1947 . 1994) (string 1890 . 1919) (string 1818 . 1862) (string 1739 . 1790) (string 1675 . 1711) (string 1614 . 1647) (string 1555 . 1586) (string 1491 . 1527) (string 1434 . 1463))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"arm-cp-islands\"" 655 . 671)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "ARM.h"
+      :fsize 1874
+      :lastmodtime '(20803 26697))
+    (semanticdb-table "semanticdb-table"
+      :file "ARMMachineFunctionInfo.h"
+      :fsize 8323
+      :lastmodtime '(21112 10223))
+    (semanticdb-table "semanticdb-table"
+      :file "Thumb2InstrInfo.h"
+      :fsize 2859
+      :lastmodtime '(20521 30521)))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!lib!Target!ARM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

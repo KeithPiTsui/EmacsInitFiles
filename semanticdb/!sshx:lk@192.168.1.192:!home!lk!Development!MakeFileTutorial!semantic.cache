@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("hellomake.h" include (:system-flag t) nil [1 23])
+            ("main" function (:type "int") nil [25 73]))          
+      :file "hellomake.c"
+      :pointmax 74
+      :unmatched-syntax '((punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("hellomake.h" include (:system-flag t) nil [20 42])
+            ("myPrintHelloMake" function (:type "void") nil [44 103]))          
+      :file "hellofunc.c"
+      :pointmax 104
+      :unmatched-syntax '((symbol 49 . 65) (VOID 44 . 48)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("myPrintHelloMake" function
+               (:prototype-flag t
+                :type "void")
+                nil [1 25]))          
+      :file "hellomake.h"
+      :pointmax 26
+      :fsize 25
+      :lastmodtime '(23742 30150)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("IDIR" variable (:default-value ("../include")) nil [1 19])
+            ("CC" variable (:default-value ("gcc")) nil [19 26])
+            ("CFLAGS" variable (:default-value ("-I$(IDIR)")) nil [26 43])
+            ("ODIR" variable (:default-value ("obj")) nil [44 53])
+            ("LDIR" variable (:default-value ("../lib")) nil [53 67])
+            ("LIBS" variable (:default-value ("-lm")) nil [68 77])
+            ("_DEPS" variable (:default-value ("hellomake.h")) nil [78 98])
+            ("DEPS" variable (:default-value ("$(patsubst %, $(IDIR)/%, $(_DEPS))")) nil [98 140])
+            ("_OBJ" variable (:default-value ("hellomake.o" "hellofunc.o")) nil [141 172])
+            ("OBJ" variable (:default-value ("$(patsubst %, $(ODIR)/%, $(_OBJ))")) nil [172 212])
+            ("$(ODIR)" function (:arguments ("%.c" "%(DEPS)")) nil [213 267])
+            ("hellomake" function (:arguments ("$(OBJ)")) nil [268 320])
+            (".PHONY" function (:arguments ("clean")) nil [321 335])
+            ("clean" function nil nil [336 383]))          
+      :file "Makefile"
+      :pointmax 383
+      :fsize 382
+      :lastmodtime '(23742 31439)
+      :unmatched-syntax '((shell-command 344 . 382) (bol 343 . 343))))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!MakeFileTutorial!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

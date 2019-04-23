@@ -1,0 +1,21 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("LDFLAGS" variable (:default-value ("$(shell $(LLVM_CONFIG) --ldflags)")) nil [43 86])
+            ("COMMON_FLAGS" variable (:default-value ("-Wall" "-Wextra")) nil [86 113])
+            ("CXXFLAGS" variable (:default-value ("$(COMMON_FLAGS)" "$(shell $(LLVM_CONFIG) --cxxflags)")) nil [113 174])
+            ("CPPFLAGS" variable (:default-value ("$(shell $(LLVM_CONFIG) -ccpflags)" "-I$(SRC_DIR)")) nil [174 231])
+            ("ReportingVariabls" function nil nil [232 380]))          
+      :file "Makefile"
+      :pointmax 380
+      :fsize 380
+      :lastmodtime '(23742 32605)
+      :unmatched-syntax '((shell-command 362 . 379) (bol 361 . 361) (semantic-list 37 . 42) (punctuation 36 . 37) (punctuation 35 . 36) (punctuation 34 . 35) (symbol 27 . 34) (bol 27 . 27) (symbol 14 . 25) (punctuation 13 . 14) (punctuation 12 . 13) (symbol 1 . 12) (bol 1 . 1) (semantic-list 38 . 43) (punctuation 37 . 38) (punctuation 36 . 37) (punctuation 35 . 36) (symbol 28 . 35) (bol 28 . 28) (symbol 14 . 25) (punctuation 13 . 14) (punctuation 12 . 13) (symbol 1 . 12) (bol 1 . 1) (semantic-list 68 . 73) (punctuation 67 . 68) (punctuation 66 . 67) (punctuation 65 . 66) (symbol 58 . 65) (bol 58 . 58) (symbol 14 . 25) (punctuation 13 . 14) (punctuation 12 . 13) (symbol 1 . 12) (bol 1 . 1) (shell-command 393 . 410) (bol 392 . 392))))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!Getting_started_with_llvm_core_libraries!chapter03!02!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

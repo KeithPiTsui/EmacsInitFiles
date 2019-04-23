@@ -1,0 +1,574 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/CodeGen/Passes.h" include nil nil [550 582])
+            ("llvm/Analysis/Passes.h" include nil nil [583 616])
+            ("llvm/Analysis/Verifier.h" include nil nil [617 652])
+            ("llvm/Assembly/PrintModulePass.h" include nil nil [653 695])
+            ("llvm/CodeGen/GCStrategy.h" include nil nil [696 732])
+            ("llvm/CodeGen/MachineFunctionPass.h" include nil nil [733 778])
+            ("llvm/CodeGen/RegAllocRegistry.h" include nil nil [779 821])
+            ("llvm/MC/MCAsmInfo.h" include nil nil [822 852])
+            ("llvm/PassManager.h" include nil nil [853 882])
+            ("llvm/Support/CommandLine.h" include nil nil [883 920])
+            ("llvm/Support/Debug.h" include nil nil [921 952])
+            ("llvm/Support/ErrorHandling.h" include nil nil [953 992])
+            ("llvm/Target/TargetLowering.h" include nil nil [993 1032])
+            ("llvm/Target/TargetSubtargetInfo.h" include nil nil [1033 1077])
+            ("llvm/Transforms/Scalar.h" include nil nil [1078 1113])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1115 1136])
+            ("DisablePostRA" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1192 1203])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1208 1241]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1138 1243])
+            ("DisableBranchFold" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1306 1317])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1322 1356]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1244 1358])
+            ("DisableTailDuplicate" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1427 1438])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1443 1479]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1359 1481])
+            ("DisableEarlyTailDup" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1548 1559])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1564 1624]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1482 1626])
+            ("DisableBlockPlacement" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1701 1712])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1713 1767]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1627 1769])
+            ("EnableBlockPlacementStats" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1853 1864])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1865 1925]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1770 1927])
+            ("DisableSSC" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1975 1986])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1991 2030]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1928 2032])
+            ("DisableMachineDCE" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2095 2106])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2111 2160]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2033 2162])
+            ("DisableEarlyIfConversion" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2232 2243])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2248 2287]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2163 2289])
+            ("DisableMachineLICM" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2354 2365])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2370 2402]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2290 2404])
+            ("DisableMachineCSE" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2467 2478])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2483 2543]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2405 2545])
+            ("OptimizeRegAlloc" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2618 2629])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2634 2700]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("cl::boolOrDefault" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2546 2702])
+            ("EnableMachineSched" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2774 2785])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2790 2849]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("cl::boolOrDefault" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2703 2851])
+            ("DisablePostRAMachineLICM" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2933 2944])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2949 2981]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2852 2983])
+            ("DisableMachineSink" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3048 3059])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3064 3099]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2984 3101])
+            ("DisableLSR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3149 3160])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3165 3213]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3102 3215])
+            ("DisableCGP" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3263 3274])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3279 3314]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3216 3316])
+            ("DisableCopyProp" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3374 3385])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3390 3431]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3317 3433])
+            ("PrintLSR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3484 3495])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3500 3558]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3434 3560])
+            ("PrintISelInput" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3617 3628])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3633 3677]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3561 3679])
+            ("PrintGCInfo" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3725 3736])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3741 3780]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3680 3782])
+            ("VerifyMachineCode" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3846 3857])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3862 3903])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3909 3960]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3783 3962])
+            ("PrintMachineInstrs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::ValueOptional" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4033 4051])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4071 4103])
+                    ("" variable (:type ("cl::value_desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4124 4151])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4153 4183]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3963 4185])
+            ("EarlyLiveIntervals" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4311 4322])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4327 4389]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4247 4391])
+            ("applyDisable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("PassID" variable (:type ("IdentifyingPassPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4705 4731])
+                    ("Override" variable (:type "bool") (reparse-symbol arg-sub-list) [4771 4785]))                  
+                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                nil [4666 4855])
+            ("applyOverride" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("TargetID" variable (:type ("IdentifyingPassPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5195 5223])
+                    ("Override" variable (:type ("cl::boolOrDefault" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5264 5291])
+                    ("StandardID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5332 5354]))                  
+                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                nil [5155 5714])
+            ("overridePass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("StandardID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6397 6419])
+                    ("TargetID" variable (:type ("IdentifyingPassPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6459 6487]))                  
+                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                nil [6358 7924])
+            ("TargetPassConfig::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [8221 8251])
+            ("TargetPassConfig::EarlyTailDuplicateID" variable
+               (:default-value "0"
+                :type "char")
+                nil [8273 8321])
+            ("TargetPassConfig::PostRAMachineLICMID" variable
+               (:default-value "0"
+                :type "char")
+                nil [8322 8369])
+            ("llvm" type
+               (:members 
+                  ( ("PassConfigImpl" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8411 8418])
+                            ("TargetPasses" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("AnalysisID" type nil nil nil)
+                                      ("IdentifyingPassPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8948 9001])
+                            ("InsertedPasses" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("std::pair" type (:template-specifier 
+                                        ( ("AnalysisID" type nil nil nil)
+                                          ("IdentifyingPassPtr" type nil nil nil))                                        ) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9136 9209]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [8388 9212]))                  
+                :type "namespace")
+                nil [8371 9214])
+            ("TargetPassConfig" function
+               (:destructor-flag t
+                :parent "TargetPassConfig"
+                :type "void")
+                nil [9265 9321])
+            ("TargetPassConfig" function
+               (:constructor-flag t
+                :parent "TargetPassConfig"
+                :arguments 
+                  ( ("tm" variable
+                       (:pointer 1
+                        :type ("TargetMachine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9470 9488])
+                    ("pm" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9489 9509]))                  
+                :type ("TargetPassConfig" type (:type "class") nil nil))
+                nil [9435 10254])
+            ("insertPass" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("TargetPassID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10341 10365])
+                    ("InsertedPassID" variable (:type ("IdentifyingPassPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10400 10434]))                  
+                :type "void")
+                nil [10307 10806])
+            ("createPassConfig" function
+               (:pointer 1
+                :parent "LLVMTargetMachine"
+                :arguments 
+                  ( ("PM" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11068 11088]))                  
+                :type ("TargetPassConfig" type (:type "class") nil nil))
+                nil [11014 11133])
+            ("TargetPassConfig" function
+               (:constructor-flag t
+                :parent "TargetPassConfig"
+                :type ("TargetPassConfig" type (:type "class") nil nil))
+                nil [11135 11281])
+            ("setOpt" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("Opt" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [11367 11377])
+                    ("Val" variable (:type "bool") (reparse-symbol arg-sub-list) [11378 11387]))                  
+                :type "void")
+                nil [11337 11457])
+            ("substitutePass" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("StandardID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11497 11519])
+                    ("TargetID" variable (:type ("IdentifyingPassPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11558 11586]))                  
+                :type "void")
+                nil [11459 11635])
+            ("getPassSubstitution" function
+               (:methodconst-flag t
+                :parent "TargetPassConfig"
+                :arguments 
+                  ( ("ID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11694 11708]))                  
+                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                nil [11637 11886])
+            ("addPass" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12303 12311]))                  
+                :type "void")
+                nil [12272 12926])
+            ("addPass" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("PassID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13231 13249]))                  
+                :type ("AnalysisID" type (:type "class") nil nil))
+                nil [13194 14271])
+            ("printAndVerify" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("Banner" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14311 14330]))                  
+                :type "void")
+                nil [14273 14507])
+            ("addIRPasses" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [14637 15593])
+            ("addPassesToHandleExceptions" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [15685 16659])
+            ("addCodeGenPrepare" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [16788 16933])
+            ("addISelPrepare" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [17041 17505])
+            ("addMachinePasses" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [18588 21420])
+            ("addMachineSSAOptimization" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [21485 23001])
+            ("getOptimizeRegAlloc" function
+               (:methodconst-flag t
+                :parent "TargetPassConfig"
+                :type "bool")
+                nil [23207 23485])
+            ("RegisterRegAlloc::Registry" variable (:type ("MachinePassRegistry" type (:type "class") nil nil)) nil [23557 23604])
+            ("useDefaultRegisterAllocator" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("FunctionPass" type (:type "class") nil nil))
+                nil [23719 23783])
+            ("defaultRegAlloc" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("useDefaultRegisterAllocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23913 23941]))                  
+                :type ("RegisterRegAlloc" type (:type "class") nil nil))
+                nil [23784 23942])
+            ("RegAlloc" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24125 24163])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24174 24211]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("RegisterRegAlloc::FunctionPassCtor" type nil nil nil)
+                          ("false" type nil nil nil)
+                          ("RegisterPassParser" type (:template-specifier 
+                            ( ("RegisterRegAlloc" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [23983 24213])
+            ("createTargetRegisterAllocator" function
+               (:pointer 1
+                :parent "TargetPassConfig"
+                :arguments 
+                  ( ("Optimized" variable (:type "bool") (reparse-symbol arg-sub-list) [24747 24762]))                  
+                :type ("FunctionPass" type (:type "class") nil nil))
+                nil [24685 24876])
+            ("createRegAllocPass" function
+               (:pointer 1
+                :parent "TargetPassConfig"
+                :arguments 
+                  ( ("Optimized" variable (:type "bool") (reparse-symbol arg-sub-list) [25412 25427]))                  
+                :type ("FunctionPass" type (:type "class") nil nil))
+                nil [25361 25812])
+            ("addFastRegAlloc" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("RegAllocPass" variable
+                       (:pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25982 26009]))                  
+                :type "void")
+                nil [25943 26157])
+            ("addOptimizedRegAlloc" function
+               (:parent "TargetPassConfig"
+                :arguments 
+                  ( ("RegAllocPass" variable
+                       (:pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26401 26428]))                  
+                :type "void")
+                nil [26357 28104])
+            ("addMachineLateOptimization" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [28381 28808])
+            ("addGCPasses" function
+               (:parent "TargetPassConfig"
+                :type "bool")
+                nil [28838 28930])
+            ("addBlockPlacement" function
+               (:parent "TargetPassConfig"
+                :type "void")
+                nil [28979 29274]))          
+      :file "Passes.cpp"
+      :pointmax 29275
+      :fsize 29274
+      :lastmodtime '(21084 7720)
+      :unmatched-syntax '((semantic-list 24182 . 24211) (semantic-list 24133 . 24163) (string 24104 . 24114) (string 23851 . 23895) (string 23824 . 23833) (semantic-list 8123 . 8220) (symbol 8108 . 8123) (string 8178 . 8205) (string 8142 . 8160) (semantic-list 4335 . 4389) (string 4287 . 4309) (semantic-list 4161 . 4183) (semantic-list 4138 . 4151) (semantic-list 4079 . 4103) (string 4010 . 4031) (semantic-list 3917 . 3960) (semantic-list 3870 . 3903) (string 3822 . 3844) (semantic-list 3749 . 3780) (string 3713 . 3723) (semantic-list 3641 . 3677) (string 3597 . 3615) (semantic-list 3508 . 3558) (string 3464 . 3482) (semantic-list 3398 . 3431) (string 3354 . 3372) (semantic-list 3287 . 3314) (string 3248 . 3261) (semantic-list 3173 . 3213) (string 3134 . 3147) (semantic-list 3072 . 3099) (string 3024 . 3046) (semantic-list 2957 . 2981) (string 2898 . 2927) (semantic-list 2798 . 2849) (string 2756 . 2772) (semantic-list 2642 . 2700) (string 2597 . 2616) (semantic-list 2491 . 2543) (string 2444 . 2465) (semantic-list 2378 . 2402) (string 2330 . 2352) (semantic-list 2256 . 2287) (string 2209 . 2230) (semantic-list 2119 . 2160) (string 2072 . 2093) (semantic-list 1999 . 2030) (string 1960 . 1973) (semantic-list 1873 . 1925) (string 1817 . 1847) (semantic-list 1721 . 1767) (string 1670 . 1695) (semantic-list 1572 . 1624) (string 1523 . 1546) (semantic-list 1451 . 1479) (string 1401 . 1425) (semantic-list 1330 . 1356) (string 1283 . 1304) (semantic-list 1216 . 1241) (string 1173 . 1190))))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!lib!CodeGen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

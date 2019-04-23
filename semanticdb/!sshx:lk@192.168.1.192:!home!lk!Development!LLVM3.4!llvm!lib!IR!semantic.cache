@@ -1,0 +1,2756 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("AsmWriter.h" include nil nil [660 682])
+            ("llvm/Assembly/Writer.h" include nil nil [684 717])
+            ("llvm/ADT/DenseMap.h" include nil nil [718 748])
+            ("llvm/ADT/STLExtras.h" include nil nil [749 780])
+            ("llvm/ADT/SmallString.h" include nil nil [781 814])
+            ("llvm/ADT/StringExtras.h" include nil nil [815 849])
+            ("llvm/Assembly/AssemblyAnnotationWriter.h" include nil nil [850 901])
+            ("llvm/Assembly/PrintModulePass.h" include nil nil [902 944])
+            ("llvm/DebugInfo.h" include nil nil [945 972])
+            ("llvm/IR/CallingConv.h" include nil nil [973 1005])
+            ("llvm/IR/Constants.h" include nil nil [1006 1036])
+            ("llvm/IR/DerivedTypes.h" include nil nil [1037 1070])
+            ("llvm/IR/InlineAsm.h" include nil nil [1071 1101])
+            ("llvm/IR/IntrinsicInst.h" include nil nil [1102 1136])
+            ("llvm/IR/LLVMContext.h" include nil nil [1137 1169])
+            ("llvm/IR/Module.h" include nil nil [1170 1197])
+            ("llvm/IR/Operator.h" include nil nil [1198 1227])
+            ("llvm/IR/TypeFinder.h" include nil nil [1228 1259])
+            ("llvm/IR/ValueSymbolTable.h" include nil nil [1260 1297])
+            ("llvm/Support/CFG.h" include nil nil [1298 1327])
+            ("llvm/Support/Debug.h" include nil nil [1328 1359])
+            ("llvm/Support/Dwarf.h" include nil nil [1360 1391])
+            ("llvm/Support/ErrorHandling.h" include nil nil [1392 1431])
+            ("llvm/Support/FormattedStream.h" include nil nil [1432 1473])
+            ("llvm/Support/MathExtras.h" include nil nil [1474 1510])
+            ("algorithm" include (:system-flag t) nil [1512 1532])
+            ("cctype" include (:system-flag t) nil [1533 1550])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1551 1572])
+            ("AssemblyAnnotationWriter" function
+               (:destructor-flag t
+                :parent "AssemblyAnnotationWriter"
+                :type "void")
+                nil [1629 1685])
+            ("getModuleFromVal" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1908 1923]))                  
+                :type ("Module" type (:type "class") nil nil))
+                nil [1870 2426])
+            ("PrintCallingConv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2457 2469])
+                    ("Out" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2470 2487]))                  
+                :type "void")
+                nil [2428 3602])
+            ("PrintEscapedString" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3771 3786])
+                    ("Out" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3787 3804]))                  
+                :type "void")
+                nil [3740 4029])
+            ("PrefixType" type
+               (:members 
+                  ( ("GlobalPrefix" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4051 4064])
+                    ("LabelPrefix" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4067 4079])
+                    ("LocalPrefix" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4082 4094])
+                    ("NoPrefix" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4097 4107]))                  
+                :type "enum")
+                nil [4031 4108])
+            ("PrintLLVMName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4364 4380])
+                    ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4381 4396])
+                    ("Prefix" variable (:type ("PrefixType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4397 4415]))                  
+                :type "void")
+                nil [4338 5581])
+            ("PrintLLVMName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5837 5853])
+                    ("V" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5854 5869]))                  
+                :type "void")
+                nil [5811 5974])
+            ("llvm" type
+               (:members 
+                  ( ("incorporateTypes" function
+                       (:parent "TypePrinting"
+                        :arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6031 6047]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5995 6668])
+                    ("print" function
+                       (:parent "TypePrinting"
+                        :arguments 
+                          ( ("Ty" variable
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6857 6866])
+                            ("OS" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6867 6883]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6832 9130])
+                    ("printStructBody" function
+                       (:parent "TypePrinting"
+                        :arguments 
+                          ( ("STy" variable
+                               (:pointer 1
+                                :type ("StructType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9167 9183])
+                            ("OS" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9184 9200]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9132 9645])
+                    ("SlotTracker" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9976 9983])
+                            ("ValueMap" type
+                               (:typedef ("DenseMap" type
+                                     (:template-specifier 
+                                        ( ("Value" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil)
+                                          ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10040 10090])
+                            ("private" label nil (reparse-symbol classsubparts) [10092 10100])
+                            ("TheModule" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10171 10195])
+                            ("TheFunction" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10271 10299])
+                            ("FunctionProcessed" variable (:type "bool") (reparse-symbol classsubparts) [10302 10325])
+                            ("mMap" variable (:type ("ValueMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10382 10396])
+                            ("mNext" variable (:type "unsigned int") (reparse-symbol classsubparts) [10399 10414])
+                            ("fMap" variable (:type ("ValueMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10473 10487])
+                            ("fNext" variable (:type "unsigned int") (reparse-symbol classsubparts) [10490 10505])
+                            ("mdnMap" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("MDNode" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil)
+                                      ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10541 10582])
+                            ("mdnNext" variable (:type "unsigned int") (reparse-symbol classsubparts) [10585 10602])
+                            ("asMap" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("AttributeSet" type nil nil nil)
+                                      ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10653 10692])
+                            ("asNext" variable (:type "unsigned int") (reparse-symbol classsubparts) [10695 10711])
+                            ("public" label nil (reparse-symbol classsubparts) [10712 10719])
+                            ("SlotTracker" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10773 10789]))                                  
+                                :type ("SlotTracker" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10761 10790])
+                            ("SlotTracker" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10877 10895]))                                  
+                                :type ("SlotTracker" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10865 10896])
+                            ("getLocalSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11047 11062]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [11030 11063])
+                            ("getGlobalSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GlobalValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11084 11105]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [11066 11106])
+                            ("getMetadataSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11129 11145]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [11109 11146])
+                            ("getAttributeGroupSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("AS" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11175 11191]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [11149 11192])
+                            ("incorporateFunction" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11351 11369]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11326 11427])
+                            ("purgeFunction" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [11647 11668])
+                            ("mdn_iterator" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11743 11765])
+                            ("mdn_begin" function (:type ("mdn_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11768 11819])
+                            ("mdn_end" function (:type ("mdn_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11822 11869])
+                            ("mdn_size" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11872 11923])
+                            ("mdn_empty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11926 11975])
+                            ("as_iterator" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12055 12076])
+                            ("as_begin" function (:type ("as_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12079 12129])
+                            ("as_end" function (:type ("as_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12132 12180])
+                            ("as_size" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12183 12232])
+                            ("as_empty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12235 12285])
+                            ("initialize" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [12341 12366])
+                            ("private" label nil (reparse-symbol classsubparts) [12396 12404])
+                            ("CreateModuleSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GlobalValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12509 12530]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12487 12531])
+                            ("CreateMetadataSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12636 12652]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12612 12653])
+                            ("CreateFunctionSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12757 12772]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12733 12773])
+                            ("CreateAttributeSetSlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("AS" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12873 12889]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12845 12890])
+                            ("processModule" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13044 13065])
+                            ("processFunction" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13143 13166])
+                            ("LLVM_DELETED_FUNCTION" variable (:type "int") (reparse-symbol classsubparts) [13203 13225])
+                            ("LLVM_DELETED_FUNCTION" variable (:type "int") (reparse-symbol classsubparts) [13264 13286]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9956 13289])
+                    ("createSlotTracker" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("M" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13322 13338]))                          
+                        :type ("SlotTracker" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13291 13371])
+                    ("createSlotTracker" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13411 13426]))                          
+                        :type ("SlotTracker" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13373 14252])
+                    ("ST_DEBUG" variable (:constant-flag t) (reparse-symbol namespacesubparts) [14306 14314])
+                    ("SlotTracker" function
+                       (:constructor-flag t
+                        :parent "SlotTracker"
+                        :arguments 
+                          ( ("M" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14465 14481]))                          
+                        :type ("SlotTracker" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14440 14592])
+                    ("SlotTracker" function
+                       (:constructor-flag t
+                        :parent "SlotTracker"
+                        :arguments 
+                          ( ("F" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14748 14766]))                          
+                        :type ("SlotTracker" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14723 14897])
+                    ("initialize" function
+                       (:parent "SlotTracker"
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14899 15119])
+                    ("processModule" function
+                       (:parent "SlotTracker"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15240 16408])
+                    ("processFunction" function
+                       (:parent "SlotTracker"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16483 18653])
+                    ("purgeFunction" function
+                       (:parent "SlotTracker"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18874 19090])
+                    ("getGlobalSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GlobalValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19182 19203]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19151 19415])
+                    ("getMetadataSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("N" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19505 19521]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19472 19732])
+                    ("getLocalSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19845 19860]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19815 20116])
+                    ("getAttributeGroupSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("AS" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20157 20173]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [20118 20389])
+                    ("CreateModuleSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GlobalValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20504 20525]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20469 21062])
+                    ("CreateFunctionSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21179 21194]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21142 21487])
+                    ("CreateMetadataSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("N" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21599 21615]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21562 22168])
+                    ("CreateAttributeSetSlot" function
+                       (:parent "SlotTracker"
+                        :arguments 
+                          ( ("AS" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22211 22227]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22170 22451])
+                    ("WriteAsOperandInternal" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22679 22696])
+                            ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22697 22712])
+                            ("TypePrinter" variable
+                               (:pointer 1
+                                :type ("TypePrinting" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22748 22774])
+                            ("Machine" variable
+                               (:pointer 1
+                                :type ("SlotTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22810 22831])
+                            ("Context" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22867 22889]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22644 22890])
+                    ("getPredicateText" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :arguments 
+                          ( ("predicate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22930 22949]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [22894 24329])
+                    ("writeAtomicRMWOperation" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24367 24384])
+                            ("Op" variable (:type ("AtomicRMWInst::BinOp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24421 24445]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24331 25084])
+                    ("WriteOptimizationInfo" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25120 25137])
+                            ("U" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("User" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25138 25152]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25086 26077])
+                    ("WriteConstantInternal" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26113 26130])
+                            ("CV" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Constant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26131 26150])
+                            ("TypePrinter" variable
+                               (:reference 1
+                                :type ("TypePrinting" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26185 26211])
+                            ("Machine" variable
+                               (:pointer 1
+                                :type ("SlotTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26246 26267])
+                            ("Context" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26302 26324]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26079 35415])
+                    ("WriteMDNodeBodyInternal" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35453 35470])
+                            ("Node" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35471 35490])
+                            ("TypePrinter" variable
+                               (:pointer 1
+                                :type ("TypePrinting" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35527 35553])
+                            ("Machine" variable
+                               (:pointer 1
+                                :type ("SlotTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35590 35611])
+                            ("Context" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35648 35670]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [35417 36097])
+                    ("WriteAsOperandInternal" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36342 36359])
+                            ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36360 36375])
+                            ("TypePrinter" variable
+                               (:pointer 1
+                                :type ("TypePrinting" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36411 36437])
+                            ("Machine" variable
+                               (:pointer 1
+                                :type ("SlotTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36473 36494])
+                            ("Context" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36530 36552]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36307 39252])
+                    ("WriteAsOperand" function
+                       (:arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39274 39291])
+                            ("V" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39292 39307])
+                            ("PrintType" variable (:type "bool") (reparse-symbol arg-sub-list) [39328 39343])
+                            ("Context" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39344 39366]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39254 39950])
+                    ("init" function
+                       (:parent "AssemblyWriter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39952 40046])
+                    ("AssemblyWriter" function
+                       (:constructor-flag t
+                        :parent "AssemblyWriter"
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40080 40105])
+                            ("Mac" variable
+                               (:reference 1
+                                :type ("SlotTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40106 40123])
+                            ("M" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40155 40171])
+                            ("AAW" variable
+                               (:pointer 1
+                                :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40203 40233]))                          
+                        :type ("AssemblyWriter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40049 40309])
+                    ("AssemblyWriter" function
+                       (:constructor-flag t
+                        :parent "AssemblyWriter"
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40342 40367])
+                            ("M" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40368 40384])
+                            ("AAW" variable
+                               (:pointer 1
+                                :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40416 40446]))                          
+                        :type ("AssemblyWriter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40311 40582])
+                    ("AssemblyWriter" function
+                       (:destructor-flag t
+                        :parent "AssemblyWriter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40584 40621])
+                    ("writeOperand" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("Operand" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40657 40678])
+                            ("PrintType" variable (:type "bool") (reparse-symbol arg-sub-list) [40679 40694]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40623 40928])
+                    ("writeAtomic" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("Ordering" variable (:type ("AtomicOrdering" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40963 40987])
+                            ("SynchScope" variable (:type ("SynchronizationScope" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41021 41053]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40930 41583])
+                    ("writeParamOperand" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("Operand" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [41624 41645])
+                            ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41685 41704])
+                            ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [41705 41718]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [41585 42080])
+                    ("printModule" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("M" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [42115 42131]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [42082 44474])
+                    ("printNamedMDNode" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("NMD" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NamedMDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44514 44537]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [44476 45464])
+                    ("PrintLinkage" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("LT" variable (:type ("GlobalValue::LinkageTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45492 45521])
+                            ("Out" variable
+                               (:reference 1
+                                :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45547 45574]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [45467 46729])
+                    ("PrintVisibility" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Vis" variable (:type ("GlobalValue::VisibilityTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46760 46793])
+                            ("Out" variable
+                               (:reference 1
+                                :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [46822 46849]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [46732 47055])
+                    ("PrintThreadLocalModel" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("TLM" variable (:type ("GlobalVariable::ThreadLocalMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47091 47127])
+                            ("Out" variable
+                               (:reference 1
+                                :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47162 47189]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47057 47664])
+                    ("printGlobal" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("GV" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GlobalVariable" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47699 47724]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47666 48774])
+                    ("printAlias" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("GA" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GlobalAlias" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [48808 48830]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [48776 49420])
+                    ("printTypeIdentities" function
+                       (:parent "AssemblyWriter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [49422 50771])
+                    ("printFunction" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("F" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50865 50883]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [50830 54233])
+                    ("printArgument" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("Arg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Argument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [54394 54414])
+                            ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54450 54469])
+                            ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [54470 54483]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [54359 54770])
+                    ("printBasicBlock" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [54891 54912]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [54854 56203])
+                    ("printInstructionLine" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("I" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56320 56341]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [56278 56383])
+                    ("printInfoComment" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56534 56549]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [56496 56625])
+                    ("printInstruction" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("I" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56727 56748]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [56689 67867])
+                    ("WriteMDNodeComment" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Node" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [67900 67919])
+                            ("Out" variable
+                               (:reference 1
+                                :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [67951 67978]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [67869 68432])
+                    ("writeMDNode" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("Slot" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [68467 68481])
+                            ("Node" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68482 68501]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68434 68570])
+                    ("writeAllMDNodes" function
+                       (:parent "AssemblyWriter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68572 68930])
+                    ("printMDNodeBody" function
+                       (:parent "AssemblyWriter"
+                        :arguments 
+                          ( ("Node" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68969 68988]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68932 69113])
+                    ("writeAllAttributeGroups" function
+                       (:parent "AssemblyWriter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [69115 69635]))                  
+                :type "namespace")
+                nil [5977 69638])
+            ("print" function
+               (:methodconst-flag t
+                :parent "Module"
+                :arguments 
+                  ( ("ROS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69897 69914])
+                    ("AAW" variable
+                       (:pointer 1
+                        :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69915 69945]))                  
+                :type "void")
+                nil [69878 70088])
+            ("print" function
+               (:methodconst-flag t
+                :parent "NamedMDNode"
+                :arguments 
+                  ( ("ROS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70114 70131])
+                    ("AAW" variable
+                       (:pointer 1
+                        :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70132 70162]))                  
+                :type "void")
+                nil [70090 70324])
+            ("print" function
+               (:methodconst-flag t
+                :parent "Type"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70343 70359]))                  
+                :type "void")
+                nil [70326 70720])
+            ("print" function
+               (:methodconst-flag t
+                :parent "Value"
+                :arguments 
+                  ( ("ROS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70740 70757])
+                    ("AAW" variable
+                       (:pointer 1
+                        :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70758 70788]))                  
+                :type "void")
+                nil [70722 72461])
+            ("printCustom" function
+               (:methodconst-flag t
+                :parent "Value"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72566 72582]))                  
+                :type "void")
+                nil [72542 72643])
+            ("dump" function
+               (:methodconst-flag t
+                :parent "Value"
+                :type "void")
+                nil [72711 72770])
+            ("dump" function
+               (:methodconst-flag t
+                :parent "Type"
+                :type "void")
+                nil [72836 72878])
+            ("dump" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type "void")
+                nil [72945 72992])
+            ("dump" function
+               (:methodconst-flag t
+                :parent "NamedMDNode"
+                :type "void")
+                nil [73069 73121]))          
+      :file "AsmWriter.cpp"
+      :pointmax 73122
+      :fsize 73121
+      :lastmodtime '(21121 23766)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ST_DEBUG" (spp-arg-list ("X") 14314 . 14317))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_IR_ASSEMBLYWRITER_H" variable (:constant-flag t) nil [615 639])
+            ("llvm/ADT/DenseMap.h" include nil nil [641 671])
+            ("llvm/ADT/OwningPtr.h" include nil nil [672 703])
+            ("llvm/IR/Attributes.h" include nil nil [704 735])
+            ("llvm/IR/Instructions.h" include nil nil [736 769])
+            ("llvm/IR/TypeFinder.h" include nil nil [770 801])
+            ("llvm/Support/FormattedStream.h" include nil nil [802 843])
+            ("llvm" type
+               (:members 
+                  ( ("BasicBlock" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [863 880])
+                    ("Function" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [881 896])
+                    ("GlobalValue" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [897 915])
+                    ("Module" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [916 929])
+                    ("NamedMDNode" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [930 948])
+                    ("Value" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [949 961])
+                    ("SlotTracker" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [962 980])
+                    ("createSlotTracker" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("M" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1056 1072]))                          
+                        :type ("SlotTracker" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1025 1073])
+                    ("TypePrinting" type
+                       (:members 
+                          ( ("LLVM_DELETED_FUNCTION" variable (:type "int") (reparse-symbol classsubparts) [1343 1365])
+                            ("LLVM_DELETED_FUNCTION" variable (:type "int") (reparse-symbol classsubparts) [1404 1426])
+                            ("public" label nil (reparse-symbol classsubparts) [1427 1434])
+                            ("NamedTypes" variable (:type ("TypeFinder" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1510 1532])
+                            ("NumberedTypes" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("StructType" type (:pointer 1) nil nil)
+                                      ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1602 1648])
+                            ("TypePrinting" function
+                               (:constructor-flag t
+                                :type ("TypePrinting" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1653 1670])
+                            ("TypePrinting" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1673 1691])
+                            ("incorporateTypes" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1717 1733]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1695 1734])
+                            ("print" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Ty" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1749 1758])
+                                    ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1759 1775]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1738 1776])
+                            ("printStructBody" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Ty" variable
+                                       (:pointer 1
+                                        :type ("StructType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1801 1816])
+                                    ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1817 1833]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1780 1834]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1285 1837])
+                    ("AssemblyWriter" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1862 1872])
+                            ("Out" variable (:type ("formatted_raw_ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1875 1902])
+                            ("TheModule" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1905 1929])
+                            ("private" label nil (reparse-symbol classsubparts) [1931 1939])
+                            ("ModuleSlotTracker" variable (:type ("OwningPtr" type
+                                 (:template-specifier 
+                                    ( ("SlotTracker" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1942 1983])
+                            ("Machine" variable (:type ("SlotTracker" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1986 2007])
+                            ("TypePrinter" variable (:type ("TypePrinting" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2010 2035])
+                            ("AnnotationWriter" variable
+                               (:pointer 1
+                                :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2038 2081])
+                            ("public" label nil (reparse-symbol classsubparts) [2083 2090])
+                            ("AssemblyWriter" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2171 2196])
+                                    ("Mac" variable
+                                       (:reference 1
+                                        :type ("SlotTracker" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2197 2214])
+                                    ("M" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2232 2248])
+                                    ("AAW" variable
+                                       (:pointer 1
+                                        :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2249 2279]))                                  
+                                :type ("AssemblyWriter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2156 2280])
+                            ("AssemblyWriter" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :type ("formatted_raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2374 2399])
+                                    ("M" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2400 2416])
+                                    ("AAW" variable
+                                       (:pointer 1
+                                        :type ("AssemblyAnnotationWriter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2434 2464]))                                  
+                                :type ("AssemblyWriter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2359 2465])
+                            ("AssemblyWriter" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2469 2495])
+                            ("printMDNodeBody" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2520 2537]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2499 2538])
+                            ("printNamedMDNode" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("NMD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("NamedMDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2563 2586]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2541 2587])
+                            ("printModule" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2608 2624]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2591 2625])
+                            ("writeOperand" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Op" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2647 2663])
+                                    ("PrintType" variable (:type "bool") (reparse-symbol arg-sub-list) [2664 2679]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2629 2680])
+                            ("writeParamOperand" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Operand" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2706 2727])
+                                    ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2728 2747])
+                                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2747 2760]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2683 2761])
+                            ("writeAtomic" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Ordering" variable (:type ("AtomicOrdering" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2781 2805])
+                                    ("SynchScope" variable (:type ("SynchronizationScope" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2806 2838]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2764 2839])
+                            ("writeAllMDNodes" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2843 2866])
+                            ("writeMDNode" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Slot" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2886 2900])
+                                    ("Node" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2901 2920]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2869 2921])
+                            ("writeAllAttributeGroups" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2924 2955])
+                            ("printTypeIdentities" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2959 2986])
+                            ("printGlobal" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("GV" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GlobalVariable" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3006 3031]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2989 3032])
+                            ("printAlias" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("GV" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GlobalAlias" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3051 3073]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3035 3074])
+                            ("printFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3096 3114]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3077 3115])
+                            ("printArgument" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("FA" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Argument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3137 3156])
+                                    ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3157 3176])
+                                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3177 3190]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3118 3191])
+                            ("printBasicBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3215 3236]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3194 3237])
+                            ("printInstructionLine" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3266 3287]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3240 3288])
+                            ("printInstruction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3313 3334]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3291 3335])
+                            ("private" label nil (reparse-symbol classsubparts) [3337 3345])
+                            ("init" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3348 3360])
+                            ("printInfoComment" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3495 3510]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3473 3511]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1839 3514]))                  
+                :type "namespace")
+                nil [845 3517]))          
+      :file "AsmWriter.h"
+      :pointmax 3566
+      :fsize 3565
+      :lastmodtime '(21040 45271)
+      :unmatched-syntax '((semantic-list 1382 . 1403) (punctuation 1381 . 1382) (OPERATOR 1373 . 1381) (VOID 1368 . 1372) (semantic-list 1320 . 1342) (symbol 1308 . 1320))
+      :lexical-table 
+        '(("LLVM_IR_ASSEMBLYWRITER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Assembly/PrintModulePass.h" include nil nil [500 542])
+            ("llvm/Assembly/Writer.h" include nil nil [543 576])
+            ("llvm/IR/LegacyPassManager.h" include nil nil [577 615])
+            ("llvm/IR/Module.h" include nil nil [616 643])
+            ("llvm/IR/LegacyPassManagers.h" include nil nil [644 683])
+            ("llvm/Support/CommandLine.h" include nil nil [684 721])
+            ("llvm/Support/Debug.h" include nil nil [722 753])
+            ("llvm/Support/ErrorHandling.h" include nil nil [754 793])
+            ("llvm/Support/ManagedStatic.h" include nil nil [794 833])
+            ("llvm/Support/Mutex.h" include nil nil [834 865])
+            ("llvm/Support/PassNameParser.h" include nil nil [866 906])
+            ("llvm/Support/Timer.h" include nil nil [907 938])
+            ("llvm/Support/raw_ostream.h" include nil nil [939 976])
+            ("algorithm" include (:system-flag t) nil [977 997])
+            ("map" include (:system-flag t) nil [998 1012])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1013 1034])
+            ("llvm::legacy" using (:type ("llvm::legacy" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1035 1064])
+            ("unnamed" type
+               (:members 
+                  ( ("PassDebugLevel" type
+                       (:members 
+                          ( ("Disabled" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1586 1595])
+                            ("Arguments" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1596 1606])
+                            ("Structure" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1607 1617])
+                            ("Executions" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1618 1629])
+                            ("Details" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1630 1639]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [1562 1640]))                  
+                :type "namespace")
+                nil [1501 1642])
+            ("PassDebugging" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1708 1719])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1738 1789])
+                    ("" variable (:type ("cl::values" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1809 2173]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("PassDebugLevel" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1644 2175])
+            ("unnamed" type
+               (:members 
+                  ( ("PassOptionList" type
+                       (:typedef ("llvm::cl::list" type
+                             (:template-specifier 
+                                ( ("llvm::PassInfo" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil)
+                                  ("bool" type nil nil nil)
+                                  ("PassNameParser" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2189 2273]))                  
+                :type "namespace")
+                nil [2177 2275])
+            ("PrintBefore" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("llvm::cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2386 2436])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2450 2461]))                  
+                :type ("PassOptionList" type (:type "class") nil nil))
+                nil [2324 2462])
+            ("PrintAfter" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("llvm::cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2523 2572])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2585 2596]))                  
+                :type ("PassOptionList" type (:type "class") nil nil))
+                nil [2464 2597])
+            ("PrintBeforeAll" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("llvm::cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2670 2713])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2745]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2599 2747])
+            ("PrintAfterAll" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("llvm::cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2816 2858])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2874 2889]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2748 2891])
+            ("ShouldPrintBeforeOrAfterPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("PI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PassInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3017 3036])
+                    ("PassesToPrint" variable
+                       (:reference 1
+                        :type ("PassOptionList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3078 3108]))                  
+                :type "bool")
+                nil [2976 3362])
+            ("ShouldPrintBeforePass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("PI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PassInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3481 3500]))                  
+                :type "bool")
+                nil [3447 3578])
+            ("ShouldPrintAfterPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("PI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PassInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3695 3714]))                  
+                :type "bool")
+                nil [3662 3790])
+            ("isPassDebuggingExecutionsOrMore" function
+               (:methodconst-flag t
+                :parent "PMDataManager"
+                :type "bool")
+                nil [3896 3997])
+            ("print" function
+               (:methodconst-flag t
+                :parent "PassManagerPrettyStackEntry"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4042 4058]))                  
+                :type "void")
+                nil [4002 4553])
+            ("unnamed" type
+               (:members 
+                  ( ("BBPassManager" type
+                       (:superclasses 
+                          ( ("PMDataManager" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4900 4907])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [4910 4925])
+                            ("BBPassManager" function
+                               (:constructor-flag t
+                                :type ("BBPassManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4937 4995])
+                            ("runOnFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5169 5181]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5150 5182])
+                            ("getAnalysisUsage" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("Info" variable
+                                       (:reference 1
+                                        :type ("AnalysisUsage" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5273 5293]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5251 5333])
+                            ("doInitialization" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5359 5369]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5337 5370])
+                            ("doInitialization" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5395 5407]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5373 5408])
+                            ("doFinalization" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5431 5441]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5411 5442])
+                            ("doFinalization" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5465 5477]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5445 5478])
+                            ("getAsPMDataManager" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("PMDataManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5482 5542])
+                            ("getAsPass" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("Pass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5545 5587])
+                            ("getPassName" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [5591 5674])
+                            ("dumpPassStructure" function
+                               (:arguments 
+                                  ( ("Offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5743 5759]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5720 6036])
+                            ("getContainedPass" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6073 6084]))                                  
+                                :type ("BasicBlockPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6040 6242])
+                            ("getPassManagerType" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("PassManagerType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6246 6340]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4833 6343])
+                    ("BBPassManager::ID" variable
+                       (:default-value "0"
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [6345 6372]))                  
+                :type "namespace")
+                nil [4556 6374])
+            ("llvm" type
+               (:members 
+                  ( ("legacy" type
+                       (:members 
+                          ( ("FunctionPassManagerImpl" type
+                               (:superclasses 
+                                  ( ("Pass" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("PMDataManager" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("PMTopLevelManager" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("anchor" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6761 6783])
+                                    ("private" label nil (reparse-symbol classsubparts) [6784 6792])
+                                    ("wasRun" variable (:type "bool") (reparse-symbol classsubparts) [6795 6807])
+                                    ("public" label nil (reparse-symbol classsubparts) [6808 6815])
+                                    ("ID" variable
+                                       (:typemodifiers ("static")
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [6818 6833])
+                                    ("FunctionPassManagerImpl" function
+                                       (:constructor-flag t
+                                        :type ("FunctionPassManagerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6845 6980])
+                                    ("add" function
+                                       (:arguments 
+                                          ( ("P" variable
+                                               (:pointer 1
+                                                :type ("Pass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7292 7300]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7283 7327])
+                                    ("createPrinterPass" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("O" variable
+                                               (:reference 1
+                                                :type ("raw_ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7410 7425])
+                                            ("Banner" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7426 7452]))                                          
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7386 7512])
+                                    ("releaseMemoryOnTheFly" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7612 7641])
+                                    ("run" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("F" variable
+                                               (:reference 1
+                                                :type ("Function" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7809 7821]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7800 7822])
+                                    ("doInitialization" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("M" variable
+                                               (:reference 1
+                                                :type ("Module" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7932 7942]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7910 7943])
+                                    ("doFinalization" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("M" variable
+                                               (:reference 1
+                                                :type ("Module" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8047 8057]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [8027 8058])
+                                    ("getAsPMDataManager" function
+                                       (:pointer 1
+                                        :typemodifiers ("virtual")
+                                        :type ("PMDataManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8063 8123])
+                                    ("getAsPass" function
+                                       (:pointer 1
+                                        :typemodifiers ("virtual")
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8126 8168])
+                                    ("getTopLevelPassManagerType" function
+                                       (:typemodifiers ("virtual")
+                                        :type ("PassManagerType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8171 8265])
+                                    ("getAnalysisUsage" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("Info" variable
+                                               (:reference 1
+                                                :type ("AnalysisUsage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8356 8376]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8334 8416])
+                                    ("getContainedManager" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8455 8466]))                                          
+                                        :type ("FPPassManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8420 8626]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [6601 8629])
+                            ("anchor" function
+                               (:parent "FunctionPassManagerImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8631 8672])
+                            ("FunctionPassManagerImpl::ID" variable
+                               (:default-value "0"
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [8674 8711]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [6420 8713]))                  
+                :type "namespace")
+                nil [6403 8742])
+            ("unnamed" type
+               (:members 
+                  ( ("MPPassManager" type
+                       (:superclasses 
+                          ( ("Pass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("PMDataManager" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9122 9129])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [9132 9147])
+                            ("MPPassManager" function
+                               (:constructor-flag t
+                                :type ("MPPassManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9159 9226])
+                            ("MPPassManager" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9263 9521])
+                            ("createPrinterPass" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("O" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9602 9617])
+                                    ("Banner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9618 9644]))                                  
+                                :type ("Pass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9578 9709])
+                            ("runOnModule" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9885 9895]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9868 9896])
+                            ("llvm::Pass::doInitialization" variable (:type "int") (reparse-symbol classsubparts) [9906 9935])
+                            ("llvm::Pass::doFinalization" variable (:type "int") (reparse-symbol classsubparts) [9944 9971])
+                            ("doInitialization" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10057 10081])
+                            ("doFinalization" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10163 10185])
+                            ("getAnalysisUsage" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("Info" variable
+                                       (:reference 1
+                                        :type ("AnalysisUsage" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10276 10296]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10254 10336])
+                            ("addLowerLevelRequiredPass" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10563 10571])
+                                    ("RequiredPass" variable
+                                       (:pointer 1
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10572 10591]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10524 10592])
+                            ("getOnTheFlyPass" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("MP" variable
+                                       (:pointer 1
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10803 10812])
+                                    ("PI" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10813 10827])
+                                    ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10828 10840]))                                  
+                                :type ("Pass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10773 10841])
+                            ("getPassName" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [10845 10924])
+                            ("getAsPMDataManager" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("PMDataManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10928 10988])
+                            ("getAsPass" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("Pass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10991 11033])
+                            ("dumpPassStructure" function
+                               (:arguments 
+                                  ( ("Offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11102 11118]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11079 11581])
+                            ("getContainedPass" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11614 11625]))                                  
+                                :type ("ModulePass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11585 11750])
+                            ("getPassManagerType" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("PassManagerType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11754 11844])
+                            ("private" label nil (reparse-symbol classsubparts) [11847 11855])
+                            ("OnTheFlyManagers" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("Pass" type (:pointer 1) nil nil)
+                                      ("FunctionPassManagerImpl" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11985 12046]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9064 12049])
+                    ("MPPassManager::ID" variable
+                       (:default-value "0"
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [12051 12078]))                  
+                :type "namespace")
+                nil [8769 12080])
+            ("llvm" type
+               (:members 
+                  ( ("legacy" type
+                       (:members 
+                          ( ("PassManagerImpl" type
+                               (:superclasses 
+                                  ( ("Pass" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("PMDataManager" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("PMTopLevelManager" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("anchor" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12428 12450])
+                                    ("public" label nil (reparse-symbol classsubparts) [12452 12459])
+                                    ("ID" variable
+                                       (:typemodifiers ("static")
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [12462 12477])
+                                    ("PassManagerImpl" function
+                                       (:constructor-flag t
+                                        :type ("PassManagerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12489 12627])
+                                    ("add" function
+                                       (:arguments 
+                                          ( ("P" variable
+                                               (:pointer 1
+                                                :type ("Pass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12939 12947]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12930 12974])
+                                    ("createPrinterPass" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("O" variable
+                                               (:reference 1
+                                                :type ("raw_ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13055 13070])
+                                            ("Banner" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13071 13097]))                                          
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13031 13162])
+                                    ("run" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("M" variable
+                                               (:reference 1
+                                                :type ("Module" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13330 13340]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13321 13341])
+                                    ("llvm::Pass::doInitialization" variable (:type "int") (reparse-symbol classsubparts) [13351 13380])
+                                    ("llvm::Pass::doFinalization" variable (:type "int") (reparse-symbol classsubparts) [13389 13416])
+                                    ("doInitialization" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13502 13526])
+                                    ("doFinalization" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13608 13630])
+                                    ("getAnalysisUsage" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("Info" variable
+                                               (:reference 1
+                                                :type ("AnalysisUsage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13721 13741]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13699 13781])
+                                    ("getAsPMDataManager" function
+                                       (:pointer 1
+                                        :typemodifiers ("virtual")
+                                        :type ("PMDataManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13785 13845])
+                                    ("getAsPass" function
+                                       (:pointer 1
+                                        :typemodifiers ("virtual")
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13848 13890])
+                                    ("getTopLevelPassManagerType" function
+                                       (:typemodifiers ("virtual")
+                                        :type ("PassManagerType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13893 13985])
+                                    ("getContainedManager" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14024 14035]))                                          
+                                        :type ("MPPassManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13989 14195]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [12292 14198])
+                            ("anchor" function
+                               (:parent "PassManagerImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14200 14233])
+                            ("PassManagerImpl::ID" variable
+                               (:default-value "0"
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [14235 14264]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [12126 14266]))                  
+                :type "namespace")
+                nil [12109 14295])
+            ("unnamed" type
+               (:members 
+                  ( ("TimingInfoMutex" variable
+                       (:typemodifiers ("static")
+                        :type ("ManagedStatic" type
+                             (:template-specifier 
+                                ( ("sys::SmartMutex" type (:template-specifier 
+                                    ( ("true" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [14618 14679])
+                    ("TimingInfo" type
+                       (:members 
+                          ( ("TimingData" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("Pass" type (:pointer 1) nil nil)
+                                      ("Timer" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14702 14737])
+                            ("TG" variable (:type ("TimerGroup" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14740 14754])
+                            ("public" label nil (reparse-symbol classsubparts) [14755 14762])
+                            ("TimingInfo" function
+                               (:constructor-flag t
+                                :type ("TimingInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14803 14863])
+                            ("TimingInfo" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [14932 15231])
+                            ("createTheTimeInfo" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "void")
+                                (reparse-symbol classsubparts) [15441 15473])
+                            ("getPassTimer" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15572 15580]))                                  
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15552 15795]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [14681 15798]))                  
+                :type "namespace")
+                nil [14322 15801])
+            ("TheTimeInfo" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("TimingInfo" type (:type "class") nil nil))
+                nil [15828 15859])
+            ("PMTopLevelManager" function
+               (:constructor-flag t
+                :parent "PMTopLevelManager"
+                :arguments 
+                  ( ("PMDM" variable
+                       (:pointer 1
+                        :type ("PMDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16077 16097]))                  
+                :type ("PMTopLevelManager" type (:type "class") nil nil))
+                nil [16040 16185])
+            ("setLastUser" function
+               (:parent "PMTopLevelManager"
+                :arguments 
+                  ( ("AnalysisPasses" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Pass" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [16285 16316])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16317 16325]))                  
+                :type "void")
+                nil [16249 18129])
+            ("collectLastUses" function
+               (:parent "PMTopLevelManager"
+                :arguments 
+                  ( ("LastUses" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("Pass" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18211 18245])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18286 18294]))                  
+                :type "void")
+                nil [18171 18609])
+            ("findAnalysisUsage" function
+               (:pointer 1
+                :parent "PMTopLevelManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18663 18671]))                  
+                :type ("AnalysisUsage" type (:type "class") nil nil))
+                nil [18611 18968])
+            ("schedulePass" function
+               (:parent "PMTopLevelManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19209 19217]))                  
+                :type "void")
+                nil [19172 23207])
+            ("findAnalysisPass" function
+               (:pointer 1
+                :parent "PMTopLevelManager"
+                :arguments 
+                  ( ("AID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23401 23416]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [23359 24756])
+            ("dumpPasses" function
+               (:methodconst-flag t
+                :parent "PMTopLevelManager"
+                :type "void")
+                nil [24809 25474])
+            ("dumpArguments" function
+               (:methodconst-flag t
+                :parent "PMTopLevelManager"
+                :type "void")
+                nil [25476 26175])
+            ("initializeAllAnalysisInfo" function
+               (:parent "PMTopLevelManager"
+                :type "void")
+                nil [26177 27071])
+            ("PMTopLevelManager" function
+               (:destructor-flag t
+                :parent "PMTopLevelManager"
+                :type "void")
+                nil [27088 27566])
+            ("recordAvailableAnalysis" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27802 27810]))                  
+                :type "void")
+                nil [27758 28293])
+            ("preserveHigherLevelAnalysis" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28441 28449]))                  
+                :type "bool")
+                nil [28393 28996])
+            ("verifyPreservedAnalysis" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29110 29118]))                  
+                :type "void")
+                nil [29066 29649])
+            ("removeNotPreservedAnalysis" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29742 29750]))                  
+                :type "void")
+                nil [29695 31461])
+            ("removeDeadPasses" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31556 31564])
+                    ("Msg" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31565 31579])
+                    ("DBG_STR" variable (:type ("PassDebuggingString" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31617 31650]))                  
+                :type "void")
+                nil [31519 32177])
+            ("freePass" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32208 32216])
+                    ("Msg" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32217 32231])
+                    ("DBG_STR" variable (:type ("PassDebuggingString" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32261 32294]))                  
+                :type "void")
+                nil [32179 33198])
+            ("add" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33331 33339])
+                    ("ProcessAnalysis" variable (:type "bool") (reparse-symbol arg-sub-list) [33340 33361]))                  
+                :type "void")
+                nil [33307 35884])
+            ("collectRequiredAnalysis" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("RP" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("Pass" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36112 36140])
+                    ("RP_NotAvail" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("AnalysisID" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36180 36221])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36266 36274]))                  
+                :type "void")
+                nil [36068 36987])
+            ("initializeAnalysisImpl" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37266 37274]))                  
+                :type "void")
+                nil [37223 37856])
+            ("findAnalysisPass" function
+               (:pointer 1
+                :parent "PMDataManager"
+                :arguments 
+                  ( ("AID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37995 38010])
+                    ("SearchParent" variable (:type "bool") (reparse-symbol arg-sub-list) [38011 38029]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [37957 38344])
+            ("dumpLastUses" function
+               (:methodconst-flag t
+                :parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38428 38436])
+                    ("Offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [38437 38453]))                  
+                :type "void")
+                nil [38395 38814])
+            ("dumpPassArguments" function
+               (:methodconst-flag t
+                :parent "PMDataManager"
+                :type "void")
+                nil [38816 39278])
+            ("dumpPassInfo" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39313 39321])
+                    ("S1" variable (:type ("PassDebuggingString" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [39322 39350])
+                    ("S2" variable (:type ("PassDebuggingString" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [39384 39412])
+                    ("Msg" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39446 39460]))                  
+                :type "void")
+                nil [39280 40433])
+            ("dumpRequiredSet" function
+               (:methodconst-flag t
+                :parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40471 40485]))                  
+                :type "void")
+                nil [40435 40676])
+            ("dumpPreservedSet" function
+               (:methodconst-flag t
+                :parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40715 40729]))                  
+                :type "void")
+                nil [40678 40922])
+            ("dumpAnalysisUsage" function
+               (:methodconst-flag t
+                :parent "PMDataManager"
+                :arguments 
+                  ( ("Msg" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40962 40976])
+                    ("P" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40977 40991])
+                    ("Set" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AnalysisUsage::VectorType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41027 41064]))                  
+                :type "void")
+                nil [40924 41627])
+            ("addLowerLevelRequiredPass" function
+               (:parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41906 41914])
+                    ("RequiredPass" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41915 41934]))                  
+                :type "void")
+                nil [41860 42716])
+            ("getOnTheFlyPass" function
+               (:pointer 1
+                :parent "PMDataManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42755 42763])
+                    ("PI" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42764 42778])
+                    ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42779 42791]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [42718 42849])
+            ("PMDataManager" function
+               (:destructor-flag t
+                :parent "PMDataManager"
+                :type "void")
+                nil [42865 43024])
+            ("getAnalysisIfAvailable" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "AnalysisResolver"
+                :arguments 
+                  ( ("ID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43291 43305])
+                    ("dir" variable (:type "bool") (reparse-symbol arg-sub-list) [43306 43315]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [43244 43364])
+            ("findImplPass" function
+               (:pointer 1
+                :parent "AnalysisResolver"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43403 43411])
+                    ("AnalysisPI" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43412 43434])
+                    ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43472 43484]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [43366 43535])
+            ("runOnFunction" function
+               (:parent "BBPassManager"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43871 43883]))                  
+                :type "bool")
+                nil [43837 44937])
+            ("doInitialization" function
+               (:parent "BBPassManager"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45025 45035]))                  
+                :type "bool")
+                nil [44988 45213])
+            ("doFinalization" function
+               (:parent "BBPassManager"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45250 45260]))                  
+                :type "bool")
+                nil [45215 45436])
+            ("doInitialization" function
+               (:parent "BBPassManager"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45475 45487]))                  
+                :type "bool")
+                nil [45438 45700])
+            ("doFinalization" function
+               (:parent "BBPassManager"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45737 45749]))                  
+                :type "bool")
+                nil [45702 45960])
+            ("FunctionPassManager" function
+               (:constructor-flag t
+                :parent "FunctionPassManager"
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46161 46171]))                  
+                :type ("FunctionPassManager" type (:type "class") nil nil))
+                nil [46120 46366])
+            ("FunctionPassManager" function
+               (:destructor-flag t
+                :parent "FunctionPassManager"
+                :type "void")
+                nil [46368 46429])
+            ("add" function
+               (:parent "FunctionPassManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46779 46787]))                  
+                :type "void")
+                nil [46749 46806])
+            ("run" function
+               (:parent "FunctionPassManager"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46999 47011]))                  
+                :type "bool")
+                nil [46969 47201])
+            ("doInitialization" function
+               (:parent "FunctionPassManager"
+                :type "bool")
+                nil [47284 47368])
+            ("doFinalization" function
+               (:parent "FunctionPassManager"
+                :type "bool")
+                nil [47446 47526])
+            ("doInitialization" function
+               (:parent "FunctionPassManagerImpl"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47701 47711]))                  
+                :type "bool")
+                nil [47654 48151])
+            ("doFinalization" function
+               (:parent "FunctionPassManagerImpl"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48198 48208]))                  
+                :type "bool")
+                nil [48153 48608])
+            ("cleanup" function
+               (:parent "FPPassManager"
+                :type "void")
+                nil [48679 48959])
+            ("releaseMemoryOnTheFly" function
+               (:parent "FunctionPassManagerImpl"
+                :type "void")
+                nil [48961 49333])
+            ("run" function
+               (:parent "FunctionPassManagerImpl"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49484 49496]))                  
+                :type "bool")
+                nil [49450 49874])
+            ("FPPassManager::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [49990 50017])
+            ("dumpPassStructure" function
+               (:parent "FPPassManager"
+                :arguments 
+                  ( ("Offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [50097 50113]))                  
+                :type "void")
+                nil [50059 50366])
+            ("runOnFunction" function
+               (:parent "FPPassManager"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50587 50599]))                  
+                :type "bool")
+                nil [50553 51539])
+            ("runOnModule" function
+               (:parent "FPPassManager"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51573 51583]))                  
+                :type "bool")
+                nil [51541 51730])
+            ("doInitialization" function
+               (:parent "FPPassManager"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51769 51779]))                  
+                :type "bool")
+                nil [51732 51957])
+            ("doFinalization" function
+               (:parent "FPPassManager"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51994 52004]))                  
+                :type "bool")
+                nil [51959 52180])
+            ("runOnModule" function
+               (:parent "MPPassManager"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52508 52518]))                  
+                :type "bool")
+                nil [52476 54365])
+            ("addLowerLevelRequiredPass" function
+               (:parent "MPPassManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54591 54599])
+                    ("RequiredPass" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54600 54619]))                  
+                :type "void")
+                nil [54545 55359])
+            ("getOnTheFlyPass" function
+               (:pointer 1
+                :parent "MPPassManager"
+                :arguments 
+                  ( ("MP" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55569 55578])
+                    ("PI" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55579 55593])
+                    ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55594 55606]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [55532 55821])
+            ("run" function
+               (:parent "PassManagerImpl"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56120 56130]))                  
+                :type "bool")
+                nil [56094 56786])
+            ("PassManager" function
+               (:constructor-flag t
+                :parent "PassManager"
+                :type ("PassManager" type (:type "class") nil nil))
+                nil [56928 57051])
+            ("PassManager" function
+               (:destructor-flag t
+                :parent "PassManager"
+                :type "void")
+                nil [57053 57097])
+            ("add" function
+               (:parent "PassManager"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57412 57420]))                  
+                :type "void")
+                nil [57390 57438])
+            ("run" function
+               (:parent "PassManager"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57613 57623]))                  
+                :type "bool")
+                nil [57591 57648])
+            ("llvm::TimePassesIsEnabled" variable
+               (:default-value "false"
+                :type "bool")
+                nil [57761 57800])
+            ("EnableTiming" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::location" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57855 57888])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57902 57968]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil)
+                          ("true" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [57801 57970])
+            ("createTheTimeInfo" function
+               (:parent "TimingInfo"
+                :type "void")
+                nil [58172 58528])
+            ("getPassTimer" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58608 58616]))                  
+                :type ("Timer" type (:type "class") nil nil))
+                nil [58582 58692])
+            ("pop" function
+               (:parent "PMStack"
+                :type "void")
+                nil [58869 58979])
+            ("push" function
+               (:parent "PMStack"
+                :arguments 
+                  ( ("PM" variable
+                       (:pointer 1
+                        :type ("PMDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59055 59073]))                  
+                :type "void")
+                nil [59036 59826])
+            ("dump" function
+               (:methodconst-flag t
+                :parent "PMStack"
+                :type "void")
+                nil [59871 60097])
+            ("assignPassManager" function
+               (:parent "ModulePass"
+                :arguments 
+                  ( ("PMS" variable
+                       (:reference 1
+                        :type ("PMStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60227 60240])
+                    ("PreferredType" variable (:type ("PassManagerType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60276 60306]))                  
+                :type "void")
+                nil [60192 60729])
+            ("assignPassManager" function
+               (:parent "FunctionPass"
+                :arguments 
+                  ( ("PMS" variable
+                       (:reference 1
+                        :type ("PMStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60890 60903])
+                    ("PreferredType" variable (:type ("PassManagerType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60941 60971]))                  
+                :type "void")
+                nil [60853 61994])
+            ("assignPassManager" function
+               (:parent "BasicBlockPass"
+                :arguments 
+                  ( ("PMS" variable
+                       (:reference 1
+                        :type ("PMStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62154 62167])
+                    ("PreferredType" variable (:type ("PassManagerType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62207 62237]))                  
+                :type "void")
+                nil [62115 63270])
+            ("PassManagerBase" function
+               (:destructor-flag t
+                :parent "PassManagerBase"
+                :type "void")
+                nil [63272 63310]))          
+      :file "LegacyPassManager.cpp"
+      :pointmax 63311
+      :fsize 63310
+      :lastmodtime '(21118 10766)
+      :unmatched-syntax '((semantic-list 57910 . 57968) (semantic-list 57867 . 57888) (string 57840 . 57853) (USING 13383 . 13388) (USING 13345 . 13350) (EXPLICIT 12480 . 12488) (USING 9938 . 9943) (USING 9900 . 9905) (EXPLICIT 9150 . 9158) (EXPLICIT 6836 . 6844) (EXPLICIT 4928 . 4936) (semantic-list 2882 . 2889) (semantic-list 2830 . 2858) (string 2783 . 2800) (semantic-list 2738 . 2745) (semantic-list 2684 . 2713) (string 2635 . 2653) (semantic-list 2537 . 2572) (string 2497 . 2510) (semantic-list 2400 . 2436) (string 2358 . 2372) (semantic-list 1819 . 2173) (semantic-list 1746 . 1789) (string 1694 . 1706))))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!lib!IR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

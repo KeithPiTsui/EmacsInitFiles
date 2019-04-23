@@ -1,0 +1,172 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_IR_LEGACYPASSMANAGER_H" variable (:constant-flag t) nil [759 786])
+            ("llvm/Pass.h" include nil nil [788 810])
+            ("llvm/Support/CBindingWrapping.h" include nil nil [811 853])
+            ("llvm" type
+               (:members 
+                  ( ("Pass" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [873 884])
+                    ("Module" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [885 898])
+                    ("legacy" type
+                       (:members 
+                          ( ("PassManagerImpl" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [920 942])
+                            ("FunctionPassManagerImpl" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [943 973])
+                            ("PassManagerBase" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1158 1165])
+                                    ("PassManagerBase" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1168 1195])
+                                    ("add" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("P" variable
+                                               (:pointer 1
+                                                :type ("Pass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1515 1523]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1498 1528]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1134 1531])
+                            ("PassManager" type
+                               (:superclasses 
+                                  ( ("PassManagerBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1621 1628])
+                                    ("PassManager" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("PassManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1632 1646])
+                                    ("PassManager" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1649 1664])
+                                    ("add" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("P" variable
+                                               (:pointer 1
+                                                :type ("Pass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1976 1984]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1967 1985])
+                                    ("run" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("M" variable
+                                               (:reference 1
+                                                :type ("Module" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2153 2163]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2144 2164])
+                                    ("private" label nil (reparse-symbol classsubparts) [2166 2174])
+                                    ("PM" variable
+                                       (:pointer 1
+                                        :type ("PassManagerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2302 2322]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1576 2325])
+                            ("FunctionPassManager" type
+                               (:superclasses 
+                                  ( ("PassManagerBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2455 2462])
+                                    ("FunctionPassManager" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("M" variable
+                                               (:pointer 1
+                                                :type ("Module" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2633 2643]))                                          
+                                        :type ("FunctionPassManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2613 2644])
+                                    ("FunctionPassManager" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2647 2670])
+                                    ("add" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("P" variable
+                                               (:pointer 1
+                                                :type ("Pass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2989 2997]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2980 2998])
+                                    ("run" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("F" variable
+                                               (:reference 1
+                                                :type ("Function" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3180 3192]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3171 3193])
+                                    ("doInitialization" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3281 3305])
+                                    ("doFinalization" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3389 3411])
+                                    ("private" label nil (reparse-symbol classsubparts) [3413 3421])
+                                    ("FPM" variable
+                                       (:pointer 1
+                                        :type ("FunctionPassManagerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3424 3453])
+                                    ("M" variable
+                                       (:pointer 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3456 3466]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2402 3469]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [900 3472]))                  
+                :type "namespace")
+                nil [855 3645]))          
+      :file "LegacyPassManager.h"
+      :pointmax 3676
+      :fsize 3675
+      :lastmodtime '(21118 10766)
+      :unmatched-syntax '((semantic-list 3597 . 3642) (symbol 3563 . 3597) (EXPLICIT 2604 . 2612))
+      :lexical-table 
+        '(("LLVM_IR_LEGACYPASSMANAGER_H")
+          )
+))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!include!llvm!IR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

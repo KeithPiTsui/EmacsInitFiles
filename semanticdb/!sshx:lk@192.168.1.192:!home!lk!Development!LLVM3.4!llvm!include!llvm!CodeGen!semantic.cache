@@ -1,0 +1,726 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CODEGEN_PASSES_H" variable (:constant-flag t) nil [589 610])
+            ("llvm/Pass.h" include nil nil [612 634])
+            ("llvm/Target/TargetMachine.h" include nil nil [635 673])
+            ("string" include (:system-flag t) nil [674 691])
+            ("llvm" type
+               (:members 
+                  ( ("FunctionPass" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [711 730])
+                    ("MachineFunctionPass" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [731 757])
+                    ("PassConfigImpl" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [758 779])
+                    ("PassInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [780 795])
+                    ("ScheduleDAGInstrs" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [796 820])
+                    ("TargetLowering" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [821 842])
+                    ("TargetLoweringBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [843 868])
+                    ("TargetRegisterClass" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [869 895])
+                    ("raw_ostream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [896 914])
+                    ("MachineSchedContext" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [915 942])
+                    ("legacy" type
+                       (:members 
+                          ( ("PassManagerBase" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1039 1061]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1020 1063])
+                    ("legacy::PassManagerBase" using (:type ("legacy::PassManagerBase" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1064 1094])
+                    ("IdentifyingPassPtr" type
+                       (:members 
+                          ( ("" type
+                               (:members 
+                                  ( ("ID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1875 1889])
+                                    ("P" variable
+                                       (:pointer 1
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1894 1902]))                                  
+                                :type "union")
+                                (reparse-symbol classsubparts) [1863 1907])
+                            ("IsInstance" variable (:type "bool") (reparse-symbol classsubparts) [1910 1926])
+                            ("public" label nil (reparse-symbol classsubparts) [1927 1934])
+                            ("IdentifyingPassPtr" function
+                               (:constructor-flag t
+                                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1937 1986])
+                            ("IdentifyingPassPtr" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("IDPtr" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2008 2025]))                                  
+                                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1989 2059])
+                            ("IdentifyingPassPtr" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("InstancePtr" variable
+                                       (:pointer 1
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2081 2099]))                                  
+                                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2062 2137])
+                            ("isValid" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2141 2175])
+                            ("isInstance" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2178 2224])
+                            ("getID" function
+                               (:methodconst-flag t
+                                :type ("AnalysisID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2228 2317])
+                            ("getInstance" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("Pass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2320 2414]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1834 2417])
+                    ("isPodLike" type
+                       (:type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2472 2503]))                          
+                        :template-specifier 
+                          ( ("IdentifyingPassPtr" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2419 2506])
+                    ("TargetPassConfig" type
+                       (:superclasses 
+                          ( ("ImmutablePass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2752 2759])
+                            ("EarlyTailDuplicateID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [3105 3138])
+                            ("PostRAMachineLICMID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [3258 3290])
+                            ("private" label nil (reparse-symbol classsubparts) [3292 3300])
+                            ("PM" variable
+                               (:pointer 1
+                                :type ("PassManagerBase" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3303 3323])
+                            ("StartAfter" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3326 3348])
+                            ("StopAfter" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3351 3372])
+                            ("Started" variable (:type "bool") (reparse-symbol classsubparts) [3375 3388])
+                            ("Stopped" variable (:type "bool") (reparse-symbol classsubparts) [3391 3404])
+                            ("protected" label nil (reparse-symbol classsubparts) [3406 3416])
+                            ("TM" variable
+                               (:pointer 1
+                                :type ("TargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3419 3437])
+                            ("Impl" variable
+                               (:pointer 1
+                                :type ("PassConfigImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3440 3461])
+                            ("Initialized" variable (:type "bool") (reparse-symbol classsubparts) [3492 3509])
+                            ("DisableVerify" variable (:type "bool") (reparse-symbol classsubparts) [3652 3671])
+                            ("EnableTailMerge" variable (:type "bool") (reparse-symbol classsubparts) [3736 3757])
+                            ("public" label nil (reparse-symbol classsubparts) [3759 3766])
+                            ("TargetPassConfig" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("tm" variable
+                                       (:pointer 1
+                                        :type ("TargetMachine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3786 3804])
+                                    ("pm" variable
+                                       (:reference 1
+                                        :type ("PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3805 3825]))                                  
+                                :type ("TargetPassConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3769 3826])
+                            ("TargetPassConfig" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("TargetPassConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3853 3872])
+                            ("TargetPassConfig" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3876 3904])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [3908 3923])
+                            ("getTM" function
+                               (:template 
+                                  ( ("TMC" type (:type "class") nil nil))                                  
+                                :type ("TMC" type (:type "class") nil nil)
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [3986 4068])
+                            ("getTargetLowering" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("TargetLowering" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4072 4161])
+                            ("setInitialized" function (:type "void") (reparse-symbol classsubparts) [4170 4215])
+                            ("getOptLevel" function
+                               (:methodconst-flag t
+                                :type ("CodeGenOpt::Level" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4219 4286])
+                            ("setStartStopPasses" function
+                               (:arguments 
+                                  ( ("Start" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4745 4762])
+                                    ("Stop" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4763 4779]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4721 4864])
+                            ("setDisableVerify" function
+                               (:arguments 
+                                  ( ("Disable" variable (:type "bool") (reparse-symbol arg-sub-list) [4890 4903]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4868 4939])
+                            ("getEnableTailMerge" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4943 5002])
+                            ("setEnableTailMerge" function
+                               (:arguments 
+                                  ( ("Enable" variable (:type "bool") (reparse-symbol arg-sub-list) [5029 5041]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5005 5078])
+                            ("substitutePass" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("StandardID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5320 5342])
+                                    ("TargetID" variable (:type ("IdentifyingPassPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5343 5371]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5300 5372])
+                            ("insertPass" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("TargetPassID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5450 5474])
+                                    ("InsertedPassID" variable (:type ("IdentifyingPassPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5475 5509]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5434 5510])
+                            ("enablePass" function
+                               (:arguments 
+                                  ( ("PassID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5600 5618]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5584 5654])
+                            ("disablePass" function
+                               (:arguments 
+                                  ( ("PassID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5746 5764]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5729 5820])
+                            ("getPassSubstitution" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("StandardID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5979 6001]))                                  
+                                :type ("IdentifyingPassPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5940 6008])
+                            ("getOptimizeRegAlloc" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6077 6110])
+                            ("addIRPasses" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6246 6273])
+                            ("addPassesToHandleExceptions" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6346 6381])
+                            ("addCodeGenPrepare" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6516 6549])
+                            ("addISelPrepare" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6663 6693])
+                            ("addInstSelector" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6839 6892])
+                            ("addMachinePasses" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7021 7053])
+                            ("createMachineScheduler" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("C" variable
+                                       (:pointer 1
+                                        :type ("MachineSchedContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7561 7584]))                                  
+                                :type ("ScheduleDAGInstrs" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7508 7610])
+                            ("protected" label nil (reparse-symbol classsubparts) [7612 7622])
+                            ("setOpt" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Opt" variable
+                                       (:reference 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [7693 7703])
+                                    ("Val" variable (:type "bool") (reparse-symbol arg-sub-list) [7704 7713]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7681 7714])
+                            ("addPreISel" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8250 8298])
+                            ("addMachineSSAOptimization" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [8410 8451])
+                            ("addILPOpts" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8818 8867])
+                            ("addPreRegAlloc" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9093 9146])
+                            ("createTargetRegisterAllocator" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Optimized" variable (:type "bool") (reparse-symbol arg-sub-list) [9332 9347]))                                  
+                                :type ("FunctionPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9280 9348])
+                            ("addFastRegAlloc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("RegAllocPass" variable
+                                       (:pointer 1
+                                        :type ("FunctionPass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9508 9535]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9479 9536])
+                            ("addOptimizedRegAlloc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("RegAllocPass" variable
+                                       (:pointer 1
+                                        :type ("FunctionPass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9722 9749]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9688 9750])
+                            ("addPreRewrite" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10222 10274])
+                            ("addPostRegAlloc" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10544 10598])
+                            ("addMachineLateOptimization" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [10681 10723])
+                            ("addPreSched2" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10995 11046])
+                            ("addGCPasses" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11221 11248])
+                            ("addBlockPlacement" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [11301 11334])
+                            ("addPreEmitPass" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11574 11627])
+                            ("addPass" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PassID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11869 11887]))                                  
+                                :type ("AnalysisID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11850 11888])
+                            ("addPass" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type ("Pass" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12073 12081]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12060 12082])
+                            ("createRegAllocPass" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("Optimized" variable (:type "bool") (reparse-symbol arg-sub-list) [12213 12228]))                                  
+                                :type ("FunctionPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12180 12229])
+                            ("printAndVerify" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Banner" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [12369 12388]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12349 12389]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2704 12392]))                  
+                :type "namespace")
+                nil [693 12394])
+            ("llvm" type
+               (:members 
+                  ( ("createBasicTargetTransformInfoPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("TM" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("TargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12751 12775]))                          
+                        :type ("ImmutablePass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12698 12776])
+                    ("createUnreachableBlockEliminationPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13193 13247])
+                    ("createMachineFunctionPrinterPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("OS" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13433 13449])
+                            ("Banner" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13485 13514]))                          
+                        :type ("MachineFunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13376 13516])
+                    ("MachineLoopInfoID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [13579 13610])
+                    ("MachineDominatorsID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [13689 13722])
+                    ("EdgeBundlesID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [13781 13808])
+                    ("LiveVariablesID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [13950 13979])
+                    ("PHIEliminationID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14294 14324])
+                    ("LiveIntervalsID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14436 14465])
+                    ("LiveStacksID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14550 14576])
+                    ("TwoAddressInstructionPassID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14758 14799])
+                    ("ProcessImplicitDefsID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14868 14903])
+                    ("RegisterCoalescerID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14983 15016])
+                    ("MachineSchedulerID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [15087 15119])
+                    ("SpillPlacementID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [15222 15252])
+                    ("VirtRegRewriterID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [15365 15396])
+                    ("UnreachableMachineBlockElimID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [15501 15544])
+                    ("DeadMachineInstructionElimID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [15628 15670])
+                    ("createFastRegisterAllocator" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15834 15878])
+                    ("createBasicRegisterAllocator" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16027 16072])
+                    ("createGreedyRegisterAllocator" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16199 16245])
+                    ("createDefaultPBQPRegisterAllocator" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16397 16448])
+                    ("PrologEpilogCodeInserterID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [16575 16615])
+                    ("ExpandPostRAPseudosID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [16718 16753])
+                    ("PostRASchedulerID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [16849 16880])
+                    ("BranchFolderPassID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [17117 17149])
+                    ("MachineFunctionPrinterPassID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [17225 17267])
+                    ("TailDuplicateID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [17378 17407])
+                    ("MachineTraceMetricsID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [17527 17562])
+                    ("EarlyIfConverterID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [17674 17706])
+                    ("StackColoringID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [17842 17871])
+                    ("IfConverterID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [17942 17969])
+                    ("MachineBlockPlacementID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [18070 18107])
+                    ("MachineBlockPlacementStatsID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [18280 18322])
+                    ("createGCLoweringPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18446 18483])
+                    ("GCMachineCodeAnalysisID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [18738 18775])
+                    ("createGCInfoPrinter" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("OS" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18862 18878]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18828 18879])
+                    ("MachineCSEID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [18957 18983])
+                    ("MachineLICMID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [19056 19083])
+                    ("MachineSinkingID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [19162 19192])
+                    ("MachineCopyPropagationID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [19294 19332])
+                    ("PeepholeOptimizerID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [19456 19489])
+                    ("OptimizePHIsID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [19633 19661])
+                    ("StackSlotColoringID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [19731 19764])
+                    ("createStackProtectorPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("TM" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("TargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19892 19916]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19853 19917])
+                    ("createMachineVerifierPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("Banner" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "0"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [20079 20101]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20039 20103])
+                    ("createDwarfEHPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("TM" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("TargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20298 20322]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20266 20323])
+                    ("createSjLjEHPreparePass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("TM" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("TargetMachine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20530 20554]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20492 20555])
+                    ("LocalStackSlotAllocationID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [20844 20884])
+                    ("ExpandISelPseudosID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [20953 20986])
+                    ("createExecutionDependencyFixPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("RC" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("TargetRegisterClass" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21294 21324]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21247 21325])
+                    ("UnpackMachineBundlesID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [21404 21440])
+                    ("FinalizeMachineBundlesID" variable
+                       (:typemodifiers ("extern")
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [21578 21616]))                  
+                :type "namespace")
+                nil [12463 21619]))          
+      :file "Passes.h"
+      :pointmax 21650
+      :fsize 21649
+      :lastmodtime '(21118 10766)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_CODEGEN_PASSES_H")
+          )
+))
+  :file "!sshx:lk@192.168.1.192:!home!lk!Development!LLVM3.4!llvm!include!llvm!CodeGen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

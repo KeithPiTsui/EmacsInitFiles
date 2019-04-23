@@ -1,0 +1,524 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_FRONTEND_FRONTENDOPTIONS_H" variable (:constant-flag t) nil [397 434])
+            ("clang/Frontend/CommandLineSourceLoc.h" include nil nil [436 484])
+            ("clang/Sema/CodeCompleteOptions.h" include nil nil [485 528])
+            ("llvm/ADT/StringRef.h" include nil nil [529 560])
+            ("string" include (:system-flag t) nil [561 578])
+            ("vector" include (:system-flag t) nil [579 596])
+            ("llvm" type
+               (:members 
+                  ( ("MemoryBuffer" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [615 634]))                  
+                :type "namespace")
+                nil [598 636])
+            ("clang" type
+               (:members 
+                  ( ("frontend" type
+                       (:members 
+                          ( ("ActionKind" type
+                               (:members 
+                                  ( ("ASTDeclList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [702 714])
+                                    ("ASTDump" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [767 775])
+                                    ("ASTPrint" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [826 835])
+                                    ("ASTView" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [886 894])
+                                    ("DumpRawTokens" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [957 971])
+                                    ("DumpTokens" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1011 1022])
+                                    ("EmitAssembly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1074 1087])
+                                    ("EmitBC" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1123 1130])
+                                    ("EmitHTML" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1173 1182])
+                                    ("EmitLLVM" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1240 1249])
+                                    ("EmitLLVMOnly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1290 1303])
+                                    ("EmitCodeGenOnly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1367 1383])
+                                    ("EmitObj" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1448 1456])
+                                    ("FixIt" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1497 1503])
+                                    ("GenerateModule" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1572 1587])
+                                    ("GeneratePCH" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1635 1647])
+                                    ("GeneratePTH" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1698 1710])
+                                    ("InitOnly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1762 1771])
+                                    ("ModuleFileInfo" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1833 1848])
+                                    ("ParseSyntaxOnly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1904 1920])
+                                    ("PluginAction" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1974 1987])
+                                    ("PrintDeclContext" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2045 2062])
+                                    ("PrintPreamble" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2113 2127])
+                                    ("PrintPreprocessedInput" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2185 2208])
+                                    ("RewriteMacros" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2227 2241])
+                                    ("RewriteObjC" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2294 2306])
+                                    ("RewriteTest" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2345 2357])
+                                    ("RunAnalysis" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2398 2410])
+                                    ("MigrateSource" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2469 2483])
+                                    ("RunPreprocessorOnly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2516 2569]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [680 2570]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [657 2572])
+                    ("InputKind" type
+                       (:members 
+                          ( ("IK_None" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2593 2601])
+                            ("IK_Asm" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2604 2611])
+                            ("IK_C" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2614 2619])
+                            ("IK_CXX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2622 2629])
+                            ("IK_ObjC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2632 2640])
+                            ("IK_ObjCXX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2643 2653])
+                            ("IK_PreprocessedC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2656 2673])
+                            ("IK_PreprocessedCXX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2676 2695])
+                            ("IK_PreprocessedObjC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2698 2718])
+                            ("IK_PreprocessedObjCXX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2721 2743])
+                            ("IK_OpenCL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2746 2756])
+                            ("IK_CUDA" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2759 2767])
+                            ("IK_AST" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2770 2777])
+                            ("IK_LLVM_IR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2780 2792]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2574 2793])
+                    ("FrontendInputFile" type
+                       (:members 
+                          ( ("File" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2934 2951])
+                            ("Buffer" variable
+                               (:pointer 1
+                                :type ("llvm::MemoryBuffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2955 2982])
+                            ("Kind" variable (:type ("InputKind" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3053 3068])
+                            ("IsSystem" variable (:type "bool") (reparse-symbol classsubparts) [3151 3165])
+                            ("public" label nil (reparse-symbol classsubparts) [3167 3174])
+                            ("FrontendInputFile" function
+                               (:constructor-flag t
+                                :type ("FrontendInputFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3177 3227])
+                            ("FrontendInputFile" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("File" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3248 3263])
+                                    ("Kind" variable (:type ("InputKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3264 3279])
+                                    ("IsSystem" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [3280 3301]))                                  
+                                :type ("FrontendInputFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3230 3372])
+                            ("FrontendInputFile" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("buffer" variable
+                                       (:pointer 1
+                                        :type ("llvm::MemoryBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3393 3420])
+                                    ("Kind" variable (:type ("InputKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3421 3436])
+                                    ("IsSystem" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [3457 3478]))                                  
+                                :type ("FrontendInputFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3375 3536])
+                            ("getKind" function
+                               (:methodconst-flag t
+                                :type ("InputKind" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3540 3582])
+                            ("isSystem" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3585 3627])
+                            ("isEmpty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3631 3691])
+                            ("isFile" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3694 3737])
+                            ("isBuffer" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3740 3785])
+                            ("getFile" function
+                               (:methodconst-flag t
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3789 3859])
+                            ("getBuffer" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("llvm::MemoryBuffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3862 3948]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2842 3951])
+                    ("FrontendOptions" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4053 4060])
+                            ("DisableFree" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4063 4088])
+                            ("RelocatablePCH" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4143 4171])
+                            ("ShowHelp" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4369 4391])
+                            ("ShowStats" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4438 4461])
+                            ("ShowTimers" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4583 4607])
+                            ("ShowVersion" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4714 4739])
+                            ("FixWhatYouCan" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4786 4813])
+                            ("FixOnlyWarnings" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4929 4958])
+                            ("FixAndRecompile" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5008 5037])
+                            ("FixToTemporaries" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5083 5113])
+                            ("ARCMTMigrateEmitARCErrors" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5163 5202])
+                            ("SkipFunctionBodies" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5307 5339])
+                            ("UseGlobalModuleIndex" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5601 5635])
+                            ("GenerateGlobalModuleIndex" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5754 5793])
+                            ("ASTDumpLookups" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5909 5937])
+                            ("CodeCompleteOpts" variable (:type ("CodeCompleteOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6058 6095])
+                            ("ARCMTAction" variable (:type ("" type
+                                 (:members 
+                                    ( ("ARCMT_None" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [6110 6121])
+                                      ("ARCMT_Check" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [6126 6138])
+                                      ("ARCMT_Modify" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [6143 6156])
+                                      ("ARCMT_Migrate" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [6161 6178]))                                    
+                                  :type "enum")
+                                  nil nil)) (reparse-symbol classsubparts) [6099 6191])
+                            ("" type
+                               (:members 
+                                  ( ("ObjCMT_None" variable
+                                       (:constant-flag t
+                                        :default-value (6220 6221)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6206 6221])
+                                    ("ObjCMT_Literals" variable
+                                       (:constant-flag t
+                                        :default-value (6302 6305)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6284 6305])
+                                    ("ObjCMT_Subscripting" variable
+                                       (:constant-flag t
+                                        :default-value (6394 6397)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6372 6397])
+                                    ("ObjCMT_ReadonlyProperty" variable
+                                       (:constant-flag t
+                                        :default-value (6495 6498)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6469 6498])
+                                    ("ObjCMT_ReadwriteProperty" variable
+                                       (:constant-flag t
+                                        :default-value (6598 6601)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6571 6601])
+                                    ("ObjCMT_Property" variable
+                                       (:constant-flag t
+                                        :default-value (6682 6734)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6664 6734])
+                                    ("ObjCMT_Annotation" variable
+                                       (:constant-flag t
+                                        :default-value (6822 6826)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6802 6826])
+                                    ("ObjCMT_Instancetype" variable
+                                       (:constant-flag t
+                                        :default-value (6921 6925)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6899 6925])
+                                    ("ObjCMT_NsMacros" variable
+                                       (:constant-flag t
+                                        :default-value (7011 7015)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6993 7015])
+                                    ("ObjCMT_ProtocolConformance" variable
+                                       (:constant-flag t
+                                        :default-value (7111 7115)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7082 7115])
+                                    ("ObjCMT_AtomicProperty" variable
+                                       (:constant-flag t
+                                        :default-value (7203 7208)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7179 7208])
+                                    ("ObjCMT_ReturnsInnerPointerProperty" variable
+                                       (:constant-flag t
+                                        :default-value (7314 7319)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7277 7319])
+                                    ("ObjCMT_NsAtomicIOSOnlyProperty" variable
+                                       (:constant-flag t
+                                        :default-value (7430 7435)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7397 7435])
+                                    ("ObjCMT_MigrateDecls" variable
+                                       (:constant-flag t
+                                        :default-value (7463 7718)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7441 7718])
+                                    ("ObjCMT_MigrateAll" variable
+                                       (:constant-flag t
+                                        :default-value (7744 7805)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7724 7805]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [6195 7810])
+                            ("ObjCMTAction" variable (:type "unsigned int") (reparse-symbol classsubparts) [7813 7835])
+                            ("ObjCMTWhiteListPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7838 7870])
+                            ("MTMigrateDir" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7874 7899])
+                            ("ARCMTMigrateReportOut" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7902 7936])
+                            ("Inputs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrontendInputFile" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7979 8017])
+                            ("OutputFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8052 8075])
+                            ("FixItSuffix" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8138 8162])
+                            ("ASTDumpFilter" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8230 8256])
+                            ("CodeCompletionAt" variable (:type ("ParsedSourceLocation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8325 8363])
+                            ("ProgramAction" variable (:type ("frontend::ActionKind" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8405 8440])
+                            ("ActionName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8508 8531])
+                            ("PluginArgs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8568 8604])
+                            ("AddPluginActions" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8682 8724])
+                            ("AddPluginArgs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::vector" type (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8773 8826])
+                            ("Plugins" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8865 8898])
+                            ("ASTMergeFiles" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8947 8986])
+                            ("LLVMArgs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9135 9169])
+                            ("OverrideRecordLayoutsFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9298 9336])
+                            ("public" label nil (reparse-symbol classsubparts) [9340 9347])
+                            ("FrontendOptions" function
+                               (:constructor-flag t
+                                :type ("FrontendOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9350 9856])
+                            ("getInputKindForExtension" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("Extension" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10140 10160]))                                  
+                                :type ("InputKind" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10098 10161]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4029 10164]))                  
+                :type "namespace")
+                nil [638 10167]))          
+      :file "FrontendOptions.h"
+      :pointmax 10200
+      :fsize 10199
+      :lastmodtime '(21124 64345)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_CLANG_FRONTEND_FRONTENDOPTIONS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "CommandLineSourceLoc.h"
+      :fsize 2536
+      :lastmodtime '(20006 31909)))
+  :file "!sshx:lk@192.168.1.192:!usr!local!include!clang!Frontend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

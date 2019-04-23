@@ -30,11 +30,11 @@
 
 (set-frame-size-according-to-resolution)
 
-;;; Setup http proxy
+;; Setup http proxy
 (setq url-proxy-services
-      '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
-        ("http" . "127.0.0.1:1087")
-        ("https" . "127.0.0.1:1087")))
+     '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
+       ("http" . "192.168.1.31:1087")
+       ("https" . "192.168.1.31:1087")))
 
 (defun sudo ()
   "Use TRAMP to 'sudo' the current buffer"
@@ -43,3 +43,26 @@
     (find-alternate-file
      (concat "/sudo:root@localhost:"
              buffer-file-name))))
+
+;; Set global keys for some commands for org-mode.
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cb" 'org-switchb)
+
+;; Look up a word on wikipedia.
+(autoload 'ispell-get-word "ispell")
+
+(defun lookup-word (word)
+  (interactive (list (save-excursion (car (ispell-get-word nil)))))
+  (browse-url (format "http://en.wiktionary.org/wiki/%s" word)))
+
+(global-set-key (kbd "M-#") 'lookup-word)
+
+
+;; load llvm-mode
+(load "llvm-mode.el")
+
+;; load llvm tablegen-mode
+(load "tablegen-mode.el")
+

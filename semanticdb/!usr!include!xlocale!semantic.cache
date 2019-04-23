@@ -1,0 +1,689 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_XLOCALE__STDLIB_H_" variable (:constant-flag t) nil [1017 1036])
+            ("sys/cdefs.h" include (:system-flag t) nil [1038 1060])
+            ("sys/_types/_size_t.h" include (:system-flag t) nil [1061 1092])
+            ("sys/_types/_wchar_t.h" include (:system-flag t) nil [1093 1125])
+            ("_xlocale.h" include (:system-flag t) nil [1126 1147])
+            ("wctomb_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2428 2435])
+                    ("" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [2436 2444])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2445 2454]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2414 2455])
+            ("wcstombs_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2343 2361])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [2362 2389])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2390 2397])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2403 2412]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2324 2413])
+            ("strtouq_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned long long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2249 2262])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2263 2271])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2272 2276])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2277 2286]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2218 2287])
+            ("strtoull_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned long long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2152 2165])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2166 2174])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2175 2179])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2180 2189]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2120 2190])
+            ("strtoul_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2081 2094])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2095 2103])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2104 2108])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2109 2118]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2055 2119])
+            ("strtoq_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "long long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1980 1993])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1994 2002])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2003 2007])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2008 2017]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1959 2018])
+            ("strtoll_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "long long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1893 1906])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1907 1915])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1916 1920])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1921 1930]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1871 1931])
+            ("strtold_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "long double"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1837 1850])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1851 1859])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1860 1869]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1813 1870])
+            ("strtol_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1774 1787])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1788 1796])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1797 1801])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1802 1811]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1759 1812])
+            ("strtof_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "float"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1700 1713])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1714 1722])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1723 1732]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1684 1758])
+            ("strtod_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "double"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1625 1638])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1639 1647])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1648 1657]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1608 1683])
+            ("mbtowc_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [1537 1558])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1559 1583])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1584 1591])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1597 1606]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1523 1607])
+            ("mbstowcs_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [1451 1473])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1474 1498])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1499 1506])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1512 1521]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1432 1522])
+            ("mblen_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1399 1412])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1413 1420])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1421 1430]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1386 1431])
+            ("atoll_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "long long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1325 1338])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1339 1348]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1305 1349])
+            ("atol_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1253 1266])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1267 1276]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1240 1277])
+            ("atoi_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1215 1228])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1229 1238]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1203 1239])
+            ("atof_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "double"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1178 1191])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1192 1201]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1163 1202]))          
+      :file "_stdlib.h"
+      :pointmax 2709
+      :fsize 2708
+      :lastmodtime '(23664 43530 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XLOCALE__STDLIB_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_XLOCALE__STDIO_H_" variable (:constant-flag t) nil [1018 1036])
+            ("_stdio.h" include (:system-flag t) nil [1038 1057])
+            ("_xlocale.h" include (:system-flag t) nil [1058 1079])
+            ("vasprintf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3378 3397])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3398 3418])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3419 3443])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3444 3452]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3361 3480])
+            ("asprintf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3262 3281])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3282 3302])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3303 3327])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3328 3332]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3246 3360])
+            ("vsprintf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2014 2032])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2033 2053])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2054 2078])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2079 2087]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1998 2163])
+            ("vprintf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1915 1935])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1936 1960])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1961 1969]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1900 1997])
+            ("vfprintf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1798 1816])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1817 1837])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1838 1862])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1863 1871]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1782 1899])
+            ("sscanf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1678 1702])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1703 1723])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1724 1748])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1749 1753]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1664 1781])
+            ("sprintf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1519 1537])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1538 1558])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1559 1583])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1584 1588]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1504 1663])
+            ("scanf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1426 1446])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1447 1471])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1472 1476]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1413 1503])
+            ("printf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1334 1354])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1355 1379])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1380 1384]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1320 1412])
+            ("fscanf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1223 1241])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1242 1262])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1263 1287])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1288 1292]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1209 1319])
+            ("fprintf_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1111 1129])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1130 1150])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1151 1175])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1176 1180]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1096 1208]))          
+      :file "_stdio.h"
+      :pointmax 3535
+      :fsize 3534
+      :lastmodtime '(23664 43530 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XLOCALE__STDIO_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_XLOCALE__CTYPE_H_" variable (:constant-flag t) nil [1016 1034])
+            ("_ctype.h" include (:system-flag t) nil [1036 1055])
+            ("_xlocale.h" include (:system-flag t) nil [1056 1077])
+            ("___toupper_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("__darwin_ct_rune_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1521 1540])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1541 1550]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1489 1551])
+            ("___tolower_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("__darwin_ct_rune_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1458 1477])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1478 1487]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1426 1488])
+            ("___runetype_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned long"
+                :arguments 
+                  ( ("" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1395 1414])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1415 1424]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1366 1425])
+            ("__maskrune_l" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1609 1628])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1629 1643])
+                    ("" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1644 1653]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1579 1654])
+            ("__istype_l" function
+               (:arguments 
+                  ( ("_c" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1705 1727])
+                    ("_f" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1728 1745])
+                    ("_l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1746 1758]))                  
+                :type "int")
+                nil [1690 1859])
+            ("__toupper_l" function
+               (:arguments 
+                  ( ("_c" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1936])
+                    ("_l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1937 1949]))                  
+                :type ("__darwin_ct_rune_t" type (:type "class") nil nil))
+                nil [1883 2035])
+            ("__tolower_l" function
+               (:arguments 
+                  ( ("_c" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2090 2112])
+                    ("_l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2113 2125]))                  
+                :type ("__darwin_ct_rune_t" type (:type "class") nil nil))
+                nil [2059 2211])
+            ("__wcwidth_l" function
+               (:arguments 
+                  ( ("_c" variable (:type ("__darwin_ct_rune_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2251 2273])
+                    ("_l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2274 2286]))                  
+                :type "int")
+                nil [2235 2514])
+            ("digittoint_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [2596 2602])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2603 2614]))                  
+                :type "int")
+                nil [2579 2654])
+            ("isalnum_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [2696 2702])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2703 2714]))                  
+                :type "int")
+                nil [2682 2765])
+            ("isalpha_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [2807 2813])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2814 2825]))                  
+                :type "int")
+                nil [2793 2867])
+            ("isblank_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [2909 2915])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2916 2927]))                  
+                :type "int")
+                nil [2895 2969])
+            ("iscntrl_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3011 3017])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3018 3029]))                  
+                :type "int")
+                nil [2997 3071])
+            ("isdigit_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3113 3119])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3120 3131]))                  
+                :type "int")
+                nil [3099 3173])
+            ("isgraph_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3215 3221])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3222 3233]))                  
+                :type "int")
+                nil [3201 3275])
+            ("ishexnumber_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3321 3327])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3328 3339]))                  
+                :type "int")
+                nil [3303 3381])
+            ("isideogram_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3426 3432])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3433 3444]))                  
+                :type "int")
+                nil [3409 3486])
+            ("islower_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3528 3534])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3535 3546]))                  
+                :type "int")
+                nil [3514 3588])
+            ("isnumber_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3631 3637])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3638 3649]))                  
+                :type "int")
+                nil [3616 3691])
+            ("isphonogram_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3737 3743])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3744 3755]))                  
+                :type "int")
+                nil [3719 3797])
+            ("isprint_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3839 3845])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3846 3857]))                  
+                :type "int")
+                nil [3825 3899])
+            ("ispunct_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3941 3947])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3948 3959]))                  
+                :type "int")
+                nil [3927 4001])
+            ("isrune_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4042 4048])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4049 4060]))                  
+                :type "int")
+                nil [4029 4105])
+            ("isspace_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4147 4153])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4154 4165]))                  
+                :type "int")
+                nil [4133 4207])
+            ("isspecial_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4251 4257])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4258 4269]))                  
+                :type "int")
+                nil [4235 4311])
+            ("isupper_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4353 4359])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4360 4371]))                  
+                :type "int")
+                nil [4339 4413])
+            ("isxdigit_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4456 4462])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4463 4474]))                  
+                :type "int")
+                nil [4441 4516])
+            ("tolower_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4558 4564])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4565 4576]))                  
+                :type "int")
+                nil [4544 4616])
+            ("toupper_l" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4658 4664])
+                    ("l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4665 4676]))                  
+                :type "int")
+                nil [4644 4716]))          
+      :file "_ctype.h"
+      :pointmax 5607
+      :fsize 5606
+      :lastmodtime '(23664 43530 0 0)
+      :unmatched-syntax '((symbol 4618 . 4643) (symbol 4518 . 4543) (symbol 4415 . 4440) (symbol 4313 . 4338) (symbol 4209 . 4234) (symbol 4107 . 4132) (symbol 4003 . 4028) (symbol 3901 . 3926) (symbol 3799 . 3824) (symbol 3693 . 3718) (symbol 3590 . 3615) (symbol 3488 . 3513) (symbol 3383 . 3408) (symbol 3277 . 3302) (symbol 3175 . 3200) (symbol 3073 . 3098) (symbol 2971 . 2996) (symbol 2869 . 2894) (symbol 2767 . 2792) (symbol 2656 . 2681) (symbol 2553 . 2578) (symbol 2213 . 2234) (symbol 2037 . 2058) (symbol 1861 . 1882) (symbol 1668 . 1689) (semantic-list 1210 . 1284))
+      :lexical-table 
+        '(("_XLOCALE__CTYPE_H_")
+          )
+))
+  :file "!usr!include!xlocale!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
